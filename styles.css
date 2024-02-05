@@ -3,6 +3,8 @@
     --secondary-color: #21a8e2;
     --tertiary-color: #7575ff;
     --bg-color: #212221;
+    --logo-circle-color: #d3a673;
+    --logo-letters-color: #9a1818;
     --page-width: 700px;
 }
 
@@ -20,23 +22,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 32px;
     padding: 14px;
-}
-
-body::after {
-    content: '';
-    background-image: url(public/14.jpeg);
-    background-size: var(--page-width);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
 }
 
 .darkerText {
@@ -57,7 +44,7 @@ p {
 
 header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     gap: 14px;
 }
@@ -76,6 +63,27 @@ nav a {
 
 nav a:hover {
     opacity: 0.7;
+}
+
+.headerNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 64px;
+    aspect-ratio: 1/1;
+}
+
+.logoContainer img {
+    width: 100%;
+}
+
+.headerStats {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .titleContainer {
