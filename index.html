@@ -14,7 +14,8 @@
 </head>
 
 <!--    IDEA: Implement parrallax scrolling, may need JS for that.
-        WRITING: (anim) I made this! (anim arrow) and this! (anim arrow) using css/insert tools -->
+        WRITING: (anim) I made this! (anim arrow) and this! (anim arrow) using css/insert tools
+        IDEA: Add a feature near the top similar to an online status (discord, steam) saying you're available for hire -->
 
 <body>
     <header>
@@ -59,20 +60,23 @@
     </header>
     <main>
         <section>
-            <p class="aboutMe">Hey there! My name is Sean, and I absolutely love designing both fun and useful 
-                projects involving Computer Science and Engineering. Although I have more experience
-                with coding than I do Engineering, there is something amazing about the 
-                two in harmony. In addition, I have a real passion for cars and reading.</p>
+            <div class="introTextContainer containerBorders">
+                <p class="aboutMe">Hey there! My name is Sean, and I absolutely love designing both fun and useful 
+                    projects involving <span>Computer Science</span> and Engineering. Although I have more experience
+                    with coding than I do Engineering, there is something amazing about the 
+                    two in harmony. I attended <span>Portland State University</span> where I developed a healthy foundation in CS. 
+                    I spend my free time in the garage, on my <span>SV650</span>, or in the kitchen!</p>
+            </div>
         </section>
         <section class="projectContainer">
             <div>
                 <p class="darkerText headerText">My Work!</p>
-                <div class="projectItem">
+                <div class="projectItem containerBorders">
                     <div>
                         <p class="darkerText">February 2017</p>
                         <p>Guitar Hero Project is an interactive floodlight display
-                            that brings the game to life. This is one of my favorite projects
-                            because of the diverse range of technology used. 
+                            that brings the game to life. This project touches on a wide array 
+                            of separate disciplines. 
                         </p>
                         <ul>
                             <li>Arduino/Controller interface written in <span>C#</span></li>
@@ -99,9 +103,7 @@
                 </div>
             </div>
         </section>
-        <div>
-            <hr class="projectDivider">
-        </div>
+        
     </main>
 </body>
 </html>
