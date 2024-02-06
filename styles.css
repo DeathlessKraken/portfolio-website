@@ -5,6 +5,7 @@
     --bg-color: #212221;
     --logo-circle-color: #d3a673;
     --logo-letters-color: #9a1818;
+    --logo-bg-color: #1a0b06;
     --page-width: 700px;
 }
 
@@ -17,7 +18,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background: linear-gradient(#232D3F,#0F0F0F);
     color: var(--primary-color);
     min-height: 100vh;
     display: flex;
