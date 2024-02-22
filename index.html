@@ -15,124 +15,48 @@
 
 <!--    IDEA: Implement parrallax scrolling, may need JS for that.
         WRITING: (anim) I made this! (anim arrow) and this! (anim arrow) using css/insert tools
-        IDEA: Add a feature near the top similar to an online status (discord, steam) saying you're available for hire -->
+        IDEA: Add a feature near the top similar to an online status (discord, steam) saying you're available for hire
+        IDEA: Use your PPS 2017 Guitar Hero expo picture -->
 
 <body>
-    <header>
-        <div class="headerNavigation">
-            <div class="logoContainer">
-                <img src="public/SB_Logo.svg" alt="sb-logo" class="logo">
+    <header>      
+        <div class="nameContainer">
+            <h1>Sean Brown</h1>
+            <div class="darkerText">
+                <p>Web Designer</p>
+                <p>Software Developer</p>
             </div>
-            <nav>
-                <a class="darkerText" targer="_blank" href="https://github.com/DeathlessKraken">GitHub</a>
-                <a class="darkerText" targer="_blank" href="">LinkedIn</a>
-            </nav>
         </div>
-        <div class="headerStats">
-            <div class="titleContainer">            
-                <div class="nameContainer">
-                    <h1>Sean Brown</h1>
-                </div>
-                <div class="emailContainer">
-                    <a href="mailto:michaelbrown.sean@gmail.com" class="outreach darkerText">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <p>Email Me!</p>
-                    </a>
-                </div>
+        <div class="statsContainer">
+            <div class="pfpContainer">
+                <img src="/public/pfp_cropped.jpeg" alt="profile-img">
             </div>
-            <div>
-                <p class="darkerText">Welcome! I'm a programmer and technology enthusiast.</p>
+            <div class="stats darkerText">
+                <div><i class="fa-brands fa-github"></i></div>
+                <div><i class="fa-brands fa-stack-overflow"></i></div>
+                <div><i class="fa-brands fa-linkedin"></i></div>
             </div>
-            <div class="statsContainer">
-                <div class="imgContainer">
-                    <img src="/public/pfp_cropped.jpeg" alt="profile-img">
-                </div>
-                <div class="stats darkerText" >
-                    <div>
-                        <div>
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </div>
-                        <p>7 Github Repositories</p>
-                    </div>
-                </div>
-            </div>         
-        </div>
+        </div>         
     </header>
     <main>
-        <section>
-            <div class="introTextContainer containerBorders">
-                <p class="aboutMe">Hey there! My name is Sean, and I absolutely love designing both fun and useful 
-                    projects involving <span>Computer Science</span> and Engineering. Although I have more experience
-                    with coding than I do Engineering, there is something amazing about the 
-                    two in harmony. I attended <span>Portland State University</span> where I developed a healthy foundation in CS. 
-                    I spend my free time in the garage, on my <span>SV650</span>, or in the kitchen!</p>
-            </div>
-        </section>
-        <section class="projectContainer">
-            <div>
-                <p class="darkerText headerText">My Work!</p>
-                <div class="projectItem containerBorders">
-                    <div>
-                        <p class="darkerText">February 2017</p>
-                        <p>Guitar Hero Project is an interactive floodlight display
-                            that brings the game to life. This project touches on a wide array 
-                            of separate disciplines. 
-                        </p>
-                        <ul>
-                            <li>Arduino/Controller interface written in <span>C#</span></li>
-                            <li>Live I/O via emulated <span>COM Port</span></li>
-                            <li>Open source library implementation with <span>C++</span></li>
-                            <li>High voltage <span>120V relays</span> control floodlights</li>
-                        </ul>
-                        <div class="linkContainer">
-                            <a target="_blank" href="https://github.com/DeathlessKraken/guitar-hero-project" class="linkItem">
-                                <i class="fa-brands fa-github"></i>
-                                <p>Github</p>
-                            </a>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=oR7VQzklVX0" class="linkItem">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                                <p>Video Demonstration</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=oR7VQzklVX0">
-                            <img src="/public/GHP.png" alt="ghp-img">
-                        </a>
-                    </div>
+        <div class="aboutMeContainer">
+            <p class="aboutMe">Hey there! I'm Sean, a computer scientist and software developer. I attended 
+                <span class="darkerText">Portland State University</span> where I developed a healthy foundation in CS. 
+                I spend my free time in the garage, on my SV650, or in the kitchen!</p>
+        </div>
+        <div class="projectsContainer">
+            <div class="projectItem">
+                <div class="projectDescription">
+                    <p>Guitar Hero Light Display</p>
+                    <p>A floodlight display on exhibition at PPS Science Expo,
+                        based on the videogame Guitar Hero III
+                    </p>
                 </div>
+                <a href="https://www.youtube.com/watch?v=oR7VQzklVX0">
+                    <img class="projectImage" src="/public/GH.jpg" alt="ghp-img">
+                </a>
             </div>
-        </section>
-        
+        </div>    
     </main>
 </body>
 </html>
-
-<!--
-            <section class="projectContainer">
-                <div>
-                    <p class="darkerText headerText">Upcoming Projects!</p>
-                    <div class="projectItem">
-                        <div>
-                            <p class="darkerText">Feb 3, 2024</p>
-                            <p>Guitar Hero Project is an interactive floodlight display
-                                that brings the game to life.
-                            </p>
-                            <div class="linkContainer">
-                                <a target="_blank" href="https://github.com/DeathlessKraken/guitar-hero-project" class="linkItem">
-                                    <i class="fa-brands fa-github"></i>
-                                    <p>Github</p>
-                                </a>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=oR7VQzklVX0" class="linkItem">
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
-                                    <p>Video Demonstration</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="/public/GHP.png" alt="ghp-img">
-                        </div>
-                    </div>
-                </div>
-            </section>
--->
