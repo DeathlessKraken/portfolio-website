@@ -15,9 +15,8 @@
 </head>
 
 <!--    IDEA: Implement parrallax scrolling, may need JS for that.
-        WRITING: (anim) I made this! (anim arrow) and this! (anim arrow) using css/insert tools
         IDEA: Add a feature near the top similar to an online status (discord, steam) saying you're available for hire
-        IDEA: Use your PPS 2017 Guitar Hero expo picture -->
+ -->
 
 <body>
     <header>      
@@ -30,12 +29,12 @@
         </div>
         <div class="statsContainer">
             <div class="pfpContainer">
-                <img src="/public/pfp.jpeg" alt="profile-img">
+                <img src="/public/pfp.jpeg" alt="Profile Picture of a handsome dude">
             </div>
             <div class="stats darkerText">
-                <div><i class="fa-brands fa-github"></i></div>
-                <div><i class="fa-brands fa-stack-overflow"></i></div>
-                <div><i class="fa-brands fa-linkedin"></i></div>
+                <div><a class="linkText" href="https://github.com/SBSoftwareDev"><i class="fa-brands fa-github"></i></a></div>
+                <div><a class="linkText" href="https://stackoverflow.com/users/3557315/"><i class="fa-brands fa-stack-overflow"></i></a></div>
+                <div><a class="linkText" href="https://www.linkedin.com/in/sean-brown-a98a512b3/"><i class="fa-brands fa-linkedin"></i></a></div>
             </div>
         </div>         
     </header>
@@ -46,18 +45,35 @@
                 I spend my free time in the garage, on my SV650, or in the kitchen!</p>
         </div>
         <div class="projectsContainer">
-            <div class="projectItem">
-                <div class="projectDescription">
-                    <p>Guitar Hero Light Display</p>
-                    <p>A floodlight display on exhibition at PPS Science Expo,
-                        based on the videogame Guitar Hero III
-                    </p>
-                </div>
+            <button type="button" class="projectItem">
+                <p>Guitar Hero Light Display</p>
                 <a href="https://www.youtube.com/watch?v=oR7VQzklVX0">
-                    <img class="projectImage" src="/public/GH.jpg" alt="ghp-img">
+                    <img class="projectImage" src="/public/GH.jpg" alt="Guitar Hero Light Display">
                 </a>
+            </button>
+            <div class="collapsibleContent">
+                <p>A floodlight display built around the videogame Guitar Hero III. 
+                    Any PS2 Guitar Hero controller can connect to the display. The display
+                    itself connects to any standard 120v outlet, and to a PC via USB. 
+                </p>
+            </div>
+            <button type="button" class="projectItem">
+                <p>The High Ground - Tavern Recipes</p>
+                <a href="">
+                    <img class="projectImage" src="/public/THG_logo.png" alt="The High Ground">
+                </a>
+            </button>
+            <div class="collapsibleContent">
+                <p>A collection of food items inspired by the medieval and fantasy genre, such as 
+                    pigeon pie and lemon cakes from <span class="accentText">Game of Thrones</span>, 
+                    Lembas from <span class="accentText">Lord of the Rings</span>, and Butter Beer 
+                    from <span class="accentText">Harry Potter</span>
+                </p>
             </div>
         </div>    
     </main>
 </body>
+
+<script src="/scripts/index.js"></script>
+
 </html>

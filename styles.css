@@ -3,6 +3,7 @@
     --secondary-color: #3E8DE3;
     --tertiary-color: #143AA2;
     --bg-color: #04060D;
+    --project-collapsible-bg-color: #131d3f;
     --logo-circle-color: #d3a673;
     --logo-letters-color: #9a1818;
     --logo-bg-color: #1a0b06;
@@ -37,6 +38,7 @@ footer {
     width: 100%;
 }
 
+/* Media query below for desktop version regarding header */
 header {
     display: flex;
     flex-direction: column;
@@ -45,6 +47,7 @@ header {
     gap: 28px;
 }
 
+/* This section concerns my name and titles */
 .nameContainer {
     display: flex;
 }
@@ -57,6 +60,8 @@ header {
     text-align: right;
 }
 
+
+/* Stats container concerns profile picture and social links */
 .statsContainer {
     display: flex;
     gap: 32px;
@@ -87,6 +92,8 @@ header {
     font-size: 1.75em;
 }
 
+
+/* Main section starts with the 'about me' */
 main {
     display: flex;
     flex-direction: column;
@@ -103,54 +110,78 @@ main {
     line-height: 1.5em;
 }
 
+/* Projects container with collapsible title cards */
 .projectsContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 14px;
 }
+
 
 .projectItem{
     background-color: rgba(46, 46, 46, 0.308);
     border-radius: 12px;
+    border: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 128px;
-    padding: 14px;
-    transition: all 0.3s ease-in-out;
+    height: 124px;
+    padding: 14px 14px;
 }
 
-.projectItem:hover{
-    transform: scale(0.9);
+.active, .projectItem:hover {
+    background-color: #0d142b;
 }
 
-.projectDescription {
+.projectItem > p{
     display: flex;
-    align-self: center;
     flex-direction: column;
+    align-self: center;
     gap: 6px;
 }
 
-.projectDescription > p:first-child {
+.projectItem > p:first-child {
     color: var(--secondary-color);
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 .projectItem > a {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 6px;
+    align-self: center;
+    height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .projectImage {
-    height: 80%;
-    aspect-ratio: 1/1;
     border-radius: 10%;
     overflow: hidden;
 }
 
+.active {
+    background-color: #0d142b;
+}
+
+.collapsibleContent {
+    padding: 0px 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+/* Multi-purpose styling section for resusables */
 .darkerText{
+    color: var(--secondary-color);
+}
+
+.accentText {
+    color: #b45e5e;
+}
+
+.linkText {
+    text-decoration: none;
     color: var(--secondary-color);
 }
 
@@ -161,5 +192,16 @@ main {
 
     .aboutMeContainer {
         width: 70%;
+    }
+
+    .projectItem {
+        padding: 14px 64px;
+    }
+
+}
+
+@media (hover: hover) {
+    .active, .projectItem:hover {
+        background-color: #0d142b;
     }
 }
