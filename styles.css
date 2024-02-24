@@ -149,11 +149,13 @@ main {
     align-self: center;
     height: 100%;
     aspect-ratio: 1/1;
+    max-width: 110px;
 }
 
 .projectImage {
     border-radius: 10%;
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 
 .active {
