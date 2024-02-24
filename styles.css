@@ -169,6 +169,15 @@ main {
     transition: max-height 0.2s ease-in-out;
 }
 
+/* Specific project item styling */
+
+#fantasy-recipe-book > a {
+    background-color: #fcce001f;
+    border: 2px solid #fcce0081;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 /* Multi-purpose styling section for resusables */
 .darkerText{
     color: var(--secondary-color);
