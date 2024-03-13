@@ -3,81 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Brown</title>   
+    <title>Sean Brown</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" href="/public/favicon.ico">
+    <link rel="icon" href="/icons/favicon.ico">
 </head>
-
-<!--    IDEA: Implement parrallax scrolling, may need JS for that.
-        IDEA: Add a feature near the top similar to an online status (discord, steam) saying you're available for hire -->
-
 <body>
-    <header>      
-        <div class="nameContainer">
-            <h1>Sean Brown</h1>
-            <div class="darkerText">
-                <p>Web Designer</p>
-                <p>Software Developer</p>
-            </div>
-        </div>
-        <div class="statsContainer">
-            <div class="pfpContainer">
-                <img src="/public/pfp.jpeg" alt="Profile Picture of a handsome dude">
-            </div>
-            <div class="stats darkerText">
-                <div><a class="linkText" href="https://github.com/SBSoftwareDev"><i class="fa-brands fa-github"></i></a></div>
-                <div><a class="linkText" href="https://stackoverflow.com/users/3557315/"><i class="fa-brands fa-stack-overflow"></i></a></div>
-                <div><a class="linkText" href="https://www.linkedin.com/in/sean-brown-a98a512b3/"><i class="fa-brands fa-linkedin"></i></a></div>
-            </div>
-        </div>         
-    </header>
-    <main>
-        <div class="aboutMeContainer">
-            <p class="aboutMe">Hey there! I'm Sean, a computer scientist and software developer. I attended 
-                <span class="darkerText">Portland State University</span> where I developed a healthy foundation in CS. 
-                I spend my free time in the garage, on my SV650, or in the kitchen!</p>
-        </div>
-        <div class="projectsContainer">
-            <button type="button" class="projectItem" id="portfolio-website">
-                <p>Guitar Hero Light Display</p>
-                <a href="https://www.youtube.com/watch?v=oR7VQzklVX0">
-                    <img class="projectImage" src="/public/GH.jpg" alt="Guitar Hero Light Display">
-                </a>
-            </button>
-            <div class="collapsibleContent">
-                <p>A floodlight display built around the videogame Guitar Hero III. 
-                    Any PS2 Guitar Hero controller can connect to the display. The display
-                    itself connects to any standard 120v outlet, and to a PC via USB. 
-                </p>
-            </div>
-            <button type="button" class="projectItem" id="fantasy-recipe-book">
-                <p>The High Ground - Tavern Recipes</p>
-                <a href="">
-                    <img class="projectImage" src="/public/THG_logo.png" alt="The High Ground">
-                </a>
-            </button>
-            <div class="collapsibleContent">
-                <p>A collection of food items inspired by the medieval and fantasy genre, such as 
-                    pigeon pie and lemon cakes from <span class="accentText">Game of Thrones</span>, 
-                    Lembas from <span class="accentText">Lord of the Rings</span>, and Butter Beer 
-                    from <span class="accentText">Harry Potter</span>
-                </p>
-            </div>
-        </div>
-        <section>
-            <div>
-                
-            </div>
-        </section>    
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
 </body>
-
-<script src="/scripts/index.js"></script>
-
 </html>
