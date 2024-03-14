@@ -2,11 +2,12 @@ import React from "react";
 import AboutMe from "./AboutMe";
 import { Container, ThemeProvider, createTheme } from "@mui/material";
 import Project from "./Project";
+import Footer from "./Footer";
 
 const theme = createTheme({
     typography: {
         allVariants: {
-            color: '#FFF'
+            color: '#F4F0E4'
         }
     }
 });
@@ -24,20 +25,22 @@ const projects = [
         title: "The High Ground - Tavern Recipes",
         imgSrc: "./images/THG_logo.png",
         imgRef: "",
-        content: "A collection of food items inspired by the medieval and fantasy genre, such as "
-            + "pigeon pie and lemon cakes from <span className='accentText'>Game of Thrones</span>, "
-            + "Lembas from <span className='accentText'>Lord of the Rings</span>, and Butter Beer "
-            + "from <span className='accentText'>Harry Potter</span>"
+        content: "A fictional tavern hosting a collection of food items inspired by the medieval and fantasy genre, such as "
+            + "pigeon pie and lemon cakes from Game of Thrones, "
+            + "Lembas from Lord of the Rings, and Butter Beer "
+            + "from Harry Potter."
     }
 ];
 
 function App(){
     return (
         <ThemeProvider theme={theme}>
-            <Container maxWidth="lg" sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <Container maxWidth="xl" sx={{ display: 'flex', gap: 2 }}>
                 <AboutMe />
-                <Project data={projects[0]}/>
+                <Project data={projects[0]} height='200'/>
+                <Project data={projects[1]} height='250'/>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 }
