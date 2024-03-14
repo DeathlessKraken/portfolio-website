@@ -6,7 +6,7 @@ import Project from "./Project";
 const theme = createTheme({
     typography: {
         allVariants: {
-            color: 'white'
+            color: '#FFF'
         }
     }
 });
@@ -14,7 +14,7 @@ const theme = createTheme({
 const projects = [
     {
         title: "Guitar Hero Light Display",
-        imgSrc: "/src/assets/img/gh.jpg",
+        imgSrc: "./images/gh.jpg",
         imgRef: "https://www.youtube.com/watch?v=oR7VQzklVX0",
         content: "A floodlight display built around the videogame Guitar Hero III. "
             + "Any PS2 Guitar Hero controller can connect to the display. "
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         title: "The High Ground - Tavern Recipes",
-        imgSrc: "/src/assets/img/THG_logo.png",
+        imgSrc: "./images/THG_logo.png",
         imgRef: "",
         content: "A collection of food items inspired by the medieval and fantasy genre, such as "
             + "pigeon pie and lemon cakes from <span className='accentText'>Game of Thrones</span>, "

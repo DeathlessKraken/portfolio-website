@@ -4,16 +4,16 @@ import React from "react";
 function AboutMe() {
     return (
         <Paper elevation={5} className='aboutMe' sx={{ backgroundColor: '#244188' }}>
-            <Box display='flex' flexDirection='row' justifyContent='space-between'>
-                <Box>
+            <Box display='flex' flexDirection='row' justifyContent='space-around'>
+                <Box sx={{margin: 'auto 4px'}}>
                     <Typography variant="h3">
                         Sean Brown
                     </Typography>
                     <Box className="darkerText">
-                        <Typography>
+                        <Typography variant="p" color='primary.light'>
                             Web Designer
                         </Typography>
-                        <Typography>
+                        <Typography color='primary.light'>
                             Software Developer
                         </Typography>
                     </Box>
@@ -22,7 +22,7 @@ function AboutMe() {
                     <Grid item xs="auto" display="flex" alignItems="center" justifyContent="space-around">
                         <Avatar 
                             alt="Profile picture of a handsome dude"
-                            src="/src/assets/img/pfp.jpeg"
+                            src="./images/pfp.jpeg"
                             sx={{ width: 150, height: 150 }}
                         />
                     </Grid>
@@ -41,7 +41,7 @@ function AboutMe() {
                     </Grid>
                 </Grid>
             </Box>
-            <Typography variant="h6">
+            <Typography variant="h6" sx={{marginTop: '20px'}} >
                 Hey there! I'm Sean, a computer scientist and software developer. 
                 I attended Portland State University where I developed a healthy foundation in CS. 
                 I spend my free time in the garage, on my SV650, or in the kitchen!

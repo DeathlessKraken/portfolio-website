@@ -10,7 +10,7 @@ function Project(props) {
             <CardActionArea>
                 <CardMedia 
                     component='img'
-                    height='250'
+                    height='200'
                     image={props.data.imgSrc}
                     alt='Sean holding a Guitar Hero Controller'
                 />
