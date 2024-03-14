@@ -1,4 +1,7 @@
 # THIS IS A COPY OF (https://github.com/github/gitignore/blob/main/Node.gitignore)
+
+notes.md
+
 # Logs
 logs
 *.log
