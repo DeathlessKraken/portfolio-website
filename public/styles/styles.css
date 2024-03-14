@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #D3D4D7;
+    --secondary-color: #3E8DE3;
+    --tertiary-color: #143AA2;
+    --bg-color: #04060D;
+    --project-collapsible-bg-color: #131d3f;
+    --logo-circle-color: #d3a673;
+    --logo-letters-color: #9a1818;
+    --logo-bg-color: #1a0b06;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1d1c1d;
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--body-item-gap);
+    margin-top: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    padding: 14px;
+}
+
+.darkerText {
+    color: var(--secondary-color);
+}
