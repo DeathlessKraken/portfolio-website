@@ -15,10 +15,16 @@ const theme = createTheme({
     }
 });
 
+const appContainerStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: 2
+}
+
 export default function App(){
     return (
         <ThemeProvider theme={theme}>
-            <Container maxWidth="xl" sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignContent: 'flex-end' }}>
+            <Container maxWidth="xl" sx={appContainerStyle}>
                 <AboutMe />
 
                 <Project 

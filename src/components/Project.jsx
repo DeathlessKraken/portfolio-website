@@ -5,7 +5,7 @@ function Project(props) {
     const [isCollapsed, setCollapse] = useState(true);
 
     return (
-        <Card raised sx={{ maxWidth: 345, backgroundColor: 'rgb(32, 32, 32)' }}>
+        <Card raised sx={{ maxWidth: 345, height: 370, backgroundColor: 'rgb(32, 32, 32)' }}>
             <CardActionArea>
                 <CardMedia 
                     component='img'

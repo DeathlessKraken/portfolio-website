@@ -3,8 +3,22 @@ import React from "react";
 
 function AboutMe() {
     return (
-        <Paper elevation={5} className='aboutMe' sx={{backgroundColor: '#244188', maxWidth: '600px', maxHeight: '350px'}}>
-            <Stack display='flex' gap='14px' justifyContent="space-around" divider={<Divider variant="middle" flexItem/>}>
+        <Paper 
+            elevation={5} 
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '14px',
+                backgroundColor: '#244188',
+                maxWidth: 600,
+                height: 370
+            }}
+        >
+            <Stack 
+                divider={<Divider variant="middle" flexItem/>} 
+                height='100%'
+                justifyContent='space-around'
+            >
             <Box display='flex' flexDirection='row' justifyContent='space-around'>
                 <Box sx={{margin: 'auto 4px'}}>
                     <Typography variant="h3">

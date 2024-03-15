@@ -31,14 +31,6 @@ header {
     justify-content: space-between;
 }
 
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: space-around;
-    padding: 14px;
-}
-
 footer {
     position: absolute;
     bottom: 0;
