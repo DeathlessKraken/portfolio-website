@@ -6,13 +6,14 @@ function Project(props) {
     const [isCollapsed, setCollapse] = useState(true);
 
     return (
-        <Card raised sx={{ maxWidth: 345, height: 'fit-content', backgroundColor: 'rgb(18, 18, 18)' }}>
+        <Card raised sx={{ maxWidth: 345, height: 'fit-content', backgroundColor: 'rgb(32, 32, 32)' }}>
             <CardActionArea>
                 <CardMedia 
                     component='img'
-                    height='200'
+                    height={props.height}
+                    width={props.width}
                     image={props.data.imgSrc}
-                    alt='Sean holding a Guitar Hero Controller'
+                    alt={props.data.imgAlt}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5">

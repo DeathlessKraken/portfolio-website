@@ -1,10 +1,4 @@
-import { SvgIcon } from "@mui/material";
-import React from "react";
-
-function Logo() {
-    return (
-        <SvgIcon sx={{ fontSize: 60 }}>
-            <svg xmlns="http://www.w3.org/2000/svg"
+<svg xmlns="http://www.w3.org/2000/svg"
                  width="345.946mm" height="345.946mm"
                  viewBox="0 0 1280 1280">
                 
@@ -424,8 +418,3 @@ function Logo() {
                          800.00,619.00 800.00,618.00 800.00,618.00
                          800.00,618.00 799.00,618.00 799.00,618.00 Z" />
             </svg>
-        </SvgIcon>
-    );
-}
-
-export default Logo;
