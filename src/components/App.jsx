@@ -18,17 +18,17 @@ const theme = createTheme({
 export default function App(){
     return (
         <ThemeProvider theme={theme}>
-            <Container maxWidth="xl" sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignItems: 'stretch' }}>
+            <Container maxWidth="xl" sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignContent: 'flex-end' }}>
                 <AboutMe />
 
                 <Project 
                     data={Projects[0]}
-                    sx={{ height: '200px' }}
+                    sx={{ height: '230px' }}
                 />
 
                 <Project 
                     data={Projects[1]}
-                    sx={{ height: '250px', padding: '10px' }}
+                    sx={{ height: '230px', padding: '10px' }}
                 />
 
                 <TechCard 
@@ -36,6 +36,7 @@ export default function App(){
                     imgAlt="Visual Studio Code icon"
                     sx={{ height: '140px' }}
                 />
+
             </Container>
             <Footer />
         </ThemeProvider>

@@ -4,7 +4,7 @@ import Webpack from "../assets/Webpack.svg?react";
 
 function TechCard(props) {
     return(
-        <Card raised sx={{ height: 'fit-content', backgroundColor: 'rgb(18, 18, 18)', padding: '8px' }}>
+        <Card raised sx={{ width: 'fit-content', height: 'fit-content', backgroundColor: 'rgb(18, 18, 18)', padding: '8px' }}>
             <CardMedia>
                 <CardMedia 
                     component={props.img}

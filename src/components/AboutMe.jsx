@@ -3,7 +3,7 @@ import React from "react";
 
 function AboutMe() {
     return (
-        <Paper elevation={5} className='aboutMe' sx={{ backgroundColor: '#244188', maxWidth: '600px', maxHeight: '350px'}}>
+        <Paper elevation={5} className='aboutMe' sx={{backgroundColor: '#244188', maxWidth: '600px', maxHeight: '350px'}}>
             <Stack display='flex' gap='14px' justifyContent="space-around" divider={<Divider variant="middle" flexItem/>}>
             <Box display='flex' flexDirection='row' justifyContent='space-around'>
                 <Box sx={{margin: 'auto 4px'}}>

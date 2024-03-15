@@ -11,7 +11,7 @@ const projects = [
     },
     {
         id: 1,
-        title: "The High Ground - Tavern Recipes",
+        title: "Tavern Recipes",
         imgSrc: "./images/THG_logo.png",
         imgRef: "",
         imgAlt: "Logo of Sean's fictional tavern, The High Ground",

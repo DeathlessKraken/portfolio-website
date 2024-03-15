@@ -5,7 +5,7 @@ function Project(props) {
     const [isCollapsed, setCollapse] = useState(true);
 
     return (
-        <Card raised sx={{ maxWidth: 345, height: 'fit-content', backgroundColor: 'rgb(32, 32, 32)' }}>
+        <Card raised sx={{ maxWidth: 345, backgroundColor: 'rgb(32, 32, 32)' }}>
             <CardActionArea>
                 <CardMedia 
                     component='img'
@@ -17,7 +17,12 @@ function Project(props) {
                     <Typography gutterBottom variant="h5">
                         {props.data.title}
                     </Typography>
-                    <Typography variant="body2" color='#A9A9A9'>
+                    <Typography 
+                        variant="body2" 
+                        color='#A9A9A9' 
+                        className='truncate'
+                        sx={{ fontSize: 16 }}
+                    >
                         {props.data.content}
                     </Typography>
                 </CardContent>
