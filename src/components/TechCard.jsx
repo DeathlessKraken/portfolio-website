@@ -1,14 +1,17 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
-import VSCode from "../assets/VSCode.svg?react";
 import Webpack from "../assets/Webpack.svg?react";
 
 function TechCard(props) {
     return(
-        <Card raised sx={{ maxWidth: 345, height: 'fit-content', backgroundColor: 'rgb(18, 18, 18)', padding: '8px' }}>
-            <CardMedia sx={{ display: 'flex', justifyContent: 'center'}}>
-                <VSCode />
-                <Webpack />
+        <Card raised sx={{ height: 'fit-content', backgroundColor: 'rgb(18, 18, 18)', padding: '8px' }}>
+            <CardMedia>
+                <CardMedia 
+                    component={props.img}
+                    src={props.imgAlt}
+                    alt={props.imgAlt}
+                    sx={{display: 'flex', justifyContent: 'center', ...props.sx}}
+                />
             </CardMedia>
             <CardContent>
                 <Typography >

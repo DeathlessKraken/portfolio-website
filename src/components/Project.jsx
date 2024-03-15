@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Card, Link, CardActionArea, CardMedia, CardContent, Typography, createTheme } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Card, CardActionArea, CardMedia, CardContent, Typography } from "@mui/material";
 
 function Project(props) {
     const [isCollapsed, setCollapse] = useState(true);
@@ -10,10 +9,9 @@ function Project(props) {
             <CardActionArea>
                 <CardMedia 
                     component='img'
-                    height={props.height}
-                    width={props.width}
                     image={props.data.imgSrc}
                     alt={props.data.imgAlt}
+                    sx={props.sx}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5">

@@ -5,6 +5,7 @@ import Project from "./Project";
 import Footer from "./Footer";
 import TechCard from "./TechCard";
 import Projects from "../assets/Projects";
+import VSCode from "../assets/VSCode.svg?react";
 
 const theme = createTheme({
     typography: {
@@ -17,27 +18,26 @@ const theme = createTheme({
 export default function App(){
     return (
         <ThemeProvider theme={theme}>
-            <Container maxWidth="xl" sx={{ display: 'flex', gap: 2 }}>
+            <Container maxWidth="xl" sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignItems: 'stretch' }}>
                 <AboutMe />
 
-                { generateProjects(Projects) }
+                <Project 
+                    data={Projects[0]}
+                    sx={{ height: '200px' }}
+                />
 
-                <TechCard />
+                <Project 
+                    data={Projects[1]}
+                    sx={{ height: '250px', padding: '10px' }}
+                />
+
+                <TechCard 
+                    img={VSCode}
+                    imgAlt="Visual Studio Code icon"
+                    sx={{ height: '140px' }}
+                />
             </Container>
             <Footer />
         </ThemeProvider>
     );
-}
-
-function generateProjects(projectsList) {
-    return projectsList.map(project => {
-        return (
-            <Project 
-                key={project.id}
-                data={project}
-                height={project.id === 1 ? '250px' : '200px'}
-                width='fit-content'
-            />
-        );
-    });
 }
