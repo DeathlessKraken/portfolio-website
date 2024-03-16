@@ -3,9 +3,8 @@ import { Container, ThemeProvider, createTheme } from "@mui/material";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Footer from "./Footer";
-import TechCard from "./TechCard";
+import ExperienceContent from "./ExperienceContent";
 import Projects from "../assets/Projects";
-import VSCode from "../assets/VSCode.svg?react";
 
 const theme = createTheme({
     typography: {
@@ -37,11 +36,7 @@ export default function App(){
                     sx={{ height: '230px', padding: '10px' }}
                 />
 
-                <TechCard 
-                    img={VSCode}
-                    imgAlt="Visual Studio Code icon"
-                    sx={{ height: '140px' }}
-                />
+                <ExperienceContent />
 
             </Container>
             <Footer />
