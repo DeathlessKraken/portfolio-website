@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
       <Typography variant="p" color='#A9A9A9' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-        Copyright ⓒ {year}
+        Built by Sean Brown - Copyright ⓒ {year}
       </Typography>
     </footer>
   );
