@@ -11,7 +11,7 @@ function Project(props) {
                     component='img'
                     image={props.data.imgSrc}
                     alt={props.data.imgAlt}
-                    sx={props.sx}
+                    sx={{...props.sx, borderBottom: 2, borderColor: '#80CEFF', borderRadius: 2 }}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5">
