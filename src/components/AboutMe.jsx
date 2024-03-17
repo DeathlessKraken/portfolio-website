@@ -58,7 +58,11 @@ function AboutMe() {
             </Box>
             <Typography variant="p" color='#D3D3D3' sx={{margin: '6px', lineHeight: 1.5, fontSize: 18}} >
                 Hey there! I'm Sean, a computer scientist and software developer. 
-                I attended Portland State University where I developed a healthy foundation in CS. 
+                I attended 
+                <Typography variant="p" color='#cfd82d' sx={{margin: '6px', lineHeight: 1.5, fontSize: 18}}>
+                    Portland State University
+                </Typography> 
+                where I developed a healthy foundation in CS. 
                 I spend my free time in the garage, on my SV650, or in the kitchen!
             </Typography>
             </Stack>
