@@ -3,7 +3,7 @@ import React from "react";
 
 const paperStyle = {
     display: 'flex',
-    width: '450px', 
+    width: 'fit-content', 
     height: 'fit-content', 
     backgroundColor: 'rgb(18, 18, 18)', 
     padding: '16px',
@@ -14,7 +14,7 @@ const paperStyle = {
 function TechCard(props) {
     return(
         <Paper elevation={5} sx={paperStyle}>
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <CardMedia 
                     component={props.img}
                     src={props.imgAlt}
@@ -22,8 +22,8 @@ function TechCard(props) {
                     sx={{display: 'flex', justifyContent: 'center', ...props.sx}}
                 />
             </Box>
-            <Stack justifyContent='space-around' sx={{ width: '100%'}}>
-                <Typography variant="h5">
+            <Stack justifyContent='space-around' sx={{ width: 250 }}>
+                <Typography variant="h6">
                     {props.name}
                 </Typography>
                 <Box sx={{ width: '100%' }}>
@@ -34,8 +34,8 @@ function TechCard(props) {
                         sx={{ height: 10, borderRadius: 5 }}
                     />
                     <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
-                        <Typography variant="h5" color='#D3D3D3'>1</Typography>
-                        <Typography variant="h5" color='#D3D3D3'>10</Typography>
+                        <Typography variant="h6" color='#D3D3D3'>1</Typography>
+                        <Typography variant="h6" color='#D3D3D3'>10</Typography>
                     </Box>
                 </Box>
             </Stack>

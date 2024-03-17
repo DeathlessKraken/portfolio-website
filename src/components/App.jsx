@@ -17,7 +17,7 @@ const theme = createTheme({
 const appContainerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: 2
+    gap: 4
 }
 
 export default function App(){
