@@ -23,20 +23,19 @@ function TechCard(props) {
                 />
             </Box>
             <Stack justifyContent='space-around' sx={{ width: 250 }}>
-                <Typography variant="h6">
-                    {props.name}
-                </Typography>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <Typography variant="h6">
+                        {props.name}
+                    </Typography> 
+                    <Typography variant="body" color='#D3D3D3'>{props.experience+'%'}</Typography>
+                </Box>
                 <Box sx={{ width: '100%' }}>
                     <LinearProgress 
                         variant="determinate" 
-                        value={props.experience * 10} 
+                        value={props.experience} 
                         color="success"
                         sx={{ height: 10, borderRadius: 5 }}
                     />
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
-                        <Typography variant="h6" color='#D3D3D3'>1</Typography>
-                        <Typography variant="h6" color='#D3D3D3'>10</Typography>
-                    </Box>
                 </Box>
             </Stack>
         </Paper>
