@@ -40,14 +40,22 @@ export default function ExperienceContent() {
                     name='HTML'
                     img={HTML}
                     imgAlt="H.T.M.L. icon"
-                    experience={10}
+                    experience={100}
                     sx={{ height: imageSize }}
                 />
                 <TechCard 
                     name='JavaScript'
                     img={Javascript}
                     imgAlt="Javascript icon"
-                    experience={8}
+                    experience={87}
+                    sx={{ height: imageSize }}
+                />
+                
+                <TechCard 
+                    name='C++'
+                    img={Cplusplus}
+                    imgAlt="C plus plus icon"
+                    experience={79}
                     sx={{ height: imageSize }}
                 />  
 
@@ -55,23 +63,7 @@ export default function ExperienceContent() {
                     name='Python'
                     img={Python}
                     imgAlt="Python icon"
-                    experience={7}
-                    sx={{ height: imageSize }}
-                />
-
-                <TechCard 
-                    name='C++'
-                    img={Cplusplus}
-                    imgAlt="C plus plus icon"
-                    experience={7}
-                    sx={{ height: imageSize }}
-                />
-
-                <TechCard 
-                    name='C#'
-                    img={Csharp}
-                    imgAlt="C sharp icon"
-                    experience={4}
+                    experience={71}
                     sx={{ height: imageSize }}
                 />
 
@@ -79,7 +71,15 @@ export default function ExperienceContent() {
                     name='Java'
                     img={Java}
                     imgAlt="Java icon"
-                    experience={5}
+                    experience={65}
+                    sx={{ height: imageSize }}
+                />
+
+                <TechCard 
+                    name='C#'
+                    img={Csharp}
+                    imgAlt="C sharp icon"
+                    experience={56}
                     sx={{ height: imageSize }}
                 />
             </Stack>
@@ -90,15 +90,7 @@ export default function ExperienceContent() {
                     name='React'
                     img={ReactLogo}
                     imgAlt="React icon"
-                    experience={9}
-                    sx={{ height: imageSize }}
-                />
-
-                <TechCard 
-                    name='PostgreSQL'
-                    img={PostgreSQL}
-                    imgAlt="Postgre S.Q.L. icon"
-                    experience={7}
+                    experience={92}
                     sx={{ height: imageSize }}
                 />
 
@@ -106,7 +98,15 @@ export default function ExperienceContent() {
                     name='Node.JS'
                     img={NodeJSLogo}
                     imgAlt="Node J.S. icon"
-                    experience={8}
+                    experience={87}
+                    sx={{ height: imageSize }}
+                />
+
+                <TechCard 
+                    name='PostgreSQL'
+                    img={PostgreSQL}
+                    imgAlt="Postgre S.Q.L. icon"
+                    experience={74}
                     sx={{ height: imageSize }}
                 />
             </Stack>
@@ -117,7 +117,7 @@ export default function ExperienceContent() {
                     name='Git'
                     img={Git}
                     imgAlt="Git icon"
-                    experience={9}
+                    experience={94}
                     sx={{ height: imageSize }}
                 />
 
@@ -126,7 +126,7 @@ export default function ExperienceContent() {
                     name='Markdown'
                     img={Markdown}
                     imgAlt="Markdown icon"
-                    experience={10}
+                    experience={100}
                     sx={{ height: imageSize }}
                 />
 
@@ -134,7 +134,7 @@ export default function ExperienceContent() {
                     name='VS Code'
                     img={VSCode}
                     imgAlt="Visual Studio Code icon"
-                    experience={9}
+                    experience={97}
                     sx={{ height: imageSize }}
                 />
 
@@ -142,23 +142,7 @@ export default function ExperienceContent() {
                     name='Postman'
                     img={Postman}
                     imgAlt="Postman icon"
-                    experience={8}
-                    sx={{ height: imageSize }}
-                />
-
-                <TechCard 
-                    name='ESLint'
-                    img={ESLint}
-                    imgAlt="E.S. lint icon"
-                    experience={7}
-                    sx={{ height: imageSize }}
-                />
-
-                <TechCard 
-                    name='Webpack'
-                    img={Webpack}
-                    imgAlt="Webpack icon"
-                    experience={7}
+                    experience={80}
                     sx={{ height: imageSize }}
                 />
             </Stack>
