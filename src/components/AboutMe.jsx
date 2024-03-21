@@ -1,7 +1,10 @@
 import { Paper, Box, Grid, Avatar, Link, Icon, Stack, Typography, Divider } from "@mui/material";
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function AboutMe() {
+    const isMobile = useMediaQuery('(max-width:600px)');
+
     return (
         <Paper 
             elevation={5} 
@@ -11,7 +14,7 @@ function AboutMe() {
                 padding: '14px',
                 backgroundColor: '#244188',
                 maxWidth: 600,
-                height: 370
+                minHeight: 370
             }}
         >
             <Stack 
@@ -19,8 +22,8 @@ function AboutMe() {
                 height='100%'
                 justifyContent='space-around'
             >
-            <Box display='flex' flexDirection='row' justifyContent='space-around'>
-                <Box sx={{margin: 'auto 4px'}}>
+            <Box display='flex' flexDirection='row' justifyContent={isMobile ? 'space-between' : 'space-around'} alignItems='center'>
+                <Box sx={{ margin: '6px' }}>
                     <Typography variant="h3">
                         Sean Brown
                     </Typography>
@@ -33,7 +36,7 @@ function AboutMe() {
                         </Typography>
                     </Box>
                 </Box>
-                <Grid container columns={2} columnSpacing={2} style={{ width: 'fit-content' }}>
+                <Grid container columns={2} spacing={2} sx={{ width: 'fit-content' }} direction={isMobile ? 'column' : 'row'} >
                     <Grid item xs="auto" display="flex" alignItems="center" justifyContent="space-around">
                         <Avatar 
                             alt="Profile picture of a handsome dude"
@@ -42,7 +45,12 @@ function AboutMe() {
                         />
                     </Grid>
                     <Grid item xs="auto">
-                        <Stack alignItems='center' justifyContent="space-around" height={1}>
+                        <Stack 
+                            alignItems='center' 
+                            justifyContent="space-around" 
+                            height={1}
+                            direction={isMobile ? 'row' : 'column'}
+                        >
                             <Link href="https://github.com/SBSoftwareDev">
                                 <Icon className="fa-brands fa-github lighterText" />
                             </Link>
@@ -59,9 +67,7 @@ function AboutMe() {
             <Typography variant="p" color='#D3D3D3' sx={{margin: '6px', lineHeight: 1.5, fontSize: 18}} >
                 Hey there! I'm Sean, a computer scientist and software developer. 
                 I attended 
-                <Typography variant="p" color='#cfd82d' sx={{margin: '6px', lineHeight: 1.5, fontSize: 18}}>
-                    Portland State University
-                </Typography> 
+                <Typography variant="p" color='#cfd82d' sx={{lineHeight: 1.5, fontSize: 18}}> Portland State University </Typography> 
                 where I developed a healthy foundation in CS. 
                 I spend my free time in the garage, on my SV650, or in the kitchen!
             </Typography>
