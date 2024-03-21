@@ -127,18 +127,17 @@ export default function ExperienceContent() {
                         <Typography variant="h5" color="primary.light">Utilities</Typography>
 
                         <TechCard 
-                            name='Git'
-                            img={Git}
-                            imgAlt="Git icon"
-                            experience={94}
-                            sx={{ height: imageSize }}
-                        />
-
-
-                        <TechCard 
                             name='Markdown'
                             img={Markdown}
                             imgAlt="Markdown icon"
+                            experience={100}
+                            sx={{ height: imageSize }}
+                        />
+
+                        <TechCard 
+                            name='Git'
+                            img={Git}
+                            imgAlt="Git icon"
                             experience={100}
                             sx={{ height: imageSize }}
                         />
