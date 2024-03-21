@@ -3,8 +3,7 @@ import React from "react";
 
 const paperStyle = {
     display: 'flex',
-    width: 'fit-content', 
-    height: 'fit-content', 
+    width: '100%',
     backgroundColor: 'rgb(18, 18, 18)', 
     padding: '16px',
     gap: '8px',
@@ -22,7 +21,7 @@ function TechCard(props) {
                     sx={{display: 'flex', justifyContent: 'center', ...props.sx}}
                 />
             </Box>
-            <Stack justifyContent='space-around' sx={{ width: 250 }}>
+            <Stack justifyContent='space-around' width='100%'>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                     <Typography variant="h6">
                         {props.name}
