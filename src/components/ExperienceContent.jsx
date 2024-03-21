@@ -23,15 +23,18 @@ export default function ExperienceContent() {
             elevation={5}
             sx={{ 
                 backgroundColor: 'rgb(40, 40, 45)',
-                padding: 5
+                paddingY: 2,
+                paddingX: 1
             }}
         >
             <Grid container 
-                spacing={{ xs: 2 }} 
-                columns={{ xs: 4, sm: 8, md: 12 }}
+                columns={{ xs: 4, md: 12}}
             >
-                <Grid item xs={4}>
-                    <Stack alignItems='center'>
+                <Grid item 
+                    xs={4} 
+                    sx={{ paddingBottom: 2, display: 'flex', justifyContent: 'center' }} 
+                >
+                    <Stack alignItems='center' width={{ xs: '95%', sm: '75%', md: '90%' }}>
                         <Typography variant="h5" color="primary.light">Languages</Typography>
 
                         <TechCard 
@@ -83,8 +86,11 @@ export default function ExperienceContent() {
                     </Stack>
                 </Grid>
 
-                <Grid item xs>
-                    <Stack alignItems='center'>
+                <Grid item 
+                    xs={4} 
+                    sx={{ paddingBottom: 2, display: 'flex', justifyContent: 'center' }} 
+                >
+                    <Stack alignItems='center' width={{ xs: '95%', sm: '75%', md: '90%' }}>
                         <Typography variant="h5" color="primary.light">Frameworks</Typography>
 
                         <TechCard 
@@ -113,8 +119,11 @@ export default function ExperienceContent() {
                     </Stack>
                 </Grid>
 
-                <Grid item xs>
-                    <Stack alignItems='center'>
+                <Grid item 
+                    xs={4} 
+                    sx={{ paddingBottom: 2, display: 'flex', justifyContent: 'center' }} 
+                >
+                    <Stack alignItems='center' width={{ xs: '95%', sm: '75%', md: '90%' }}>
                         <Typography variant="h5" color="primary.light">Utilities</Typography>
 
                         <TechCard 
