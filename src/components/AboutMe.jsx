@@ -2,7 +2,7 @@ import { Paper, Box, Grid, Avatar, Link, Icon, Stack, Typography, Divider } from
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-function AboutMe() {
+function AboutMe(props) {
     const isMobile = useMediaQuery('(max-width:600px)');
 
     return (
@@ -13,18 +13,18 @@ function AboutMe() {
                 flexDirection: 'column',
                 padding: '14px',
                 backgroundColor: '#244188',
-                maxWidth: 600,
-                minHeight: 370
+                maxWidth: '600px',
             }}
         >
             <Stack 
                 divider={<Divider variant="middle" flexItem/>} 
                 height='100%'
                 justifyContent='space-around'
+                spacing={2}
             >
             <Box display='flex' flexDirection='row' justifyContent={isMobile ? 'space-between' : 'space-around'} alignItems='center'>
                 <Box sx={{ margin: '6px' }}>
-                    <Typography variant="h3">
+                    <Typography variant="h3" sx={{ lineHeight: 1 }}>
                         Sean Brown
                     </Typography>
                     <Box className="darkerText">
