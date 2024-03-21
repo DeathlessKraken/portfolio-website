@@ -5,16 +5,18 @@ function Project(props) {
     const [isCollapsed, setCollapse] = useState(true);
 
     return (
-        <Card raised sx={{ maxWidth: 345, height: 370, backgroundColor: 'rgb(32, 32, 32)' }}>
-            <CardActionArea>
-                <CardMedia 
-                    component='img'
-                    image={props.data.imgSrc}
-                    alt={props.data.imgAlt}
-                    sx={{...props.sx, borderBottom: 2, borderColor: '#80CEFF', borderRadius: 2 }}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5">
+        <Card raised sx={{ height: '100%', backgroundColor: 'rgb(32, 32, 32)', display: "flex", flexDirection: 'column', justifyContent: 'space-between' }}>
+            <CardActionArea sx={{ height: '100%' }}>
+                <CardMedia component='div' sx={{ overflow: 'hidden', borderBottom: 2, borderColor: '#80CEFF', borderRadius: 2}}>
+                    <CardMedia 
+                        component='img'
+                        image={props.data.imgSrc}
+                        alt={props.data.imgAlt}
+                        sx={{...props.sx}}
+                    />
+                </CardMedia>
+                <CardContent sx={{ display: "flex", flexDirection: 'column', justifyContent: 'space-around'}}>
+                    <Typography gutterBottom noWrap variant="h5">
                         {props.data.title}
                     </Typography>
                     <Typography 
