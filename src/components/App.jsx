@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, ThemeProvider, createTheme, useMediaQuery, Stack, Box } from "@mui/material";
+import { Container, Grid, ThemeProvider, createTheme, useMediaQuery, Stack, Box, Typography } from "@mui/material";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -29,7 +29,7 @@ export default function App(){
 
     return (
         <ThemeProvider theme={theme}>
-            <Container maxWidth="xl" sx={appContainerStyle}>
+            <Container maxWidth="xl" sx={appContainerStyle}> 
                 <Stack 
                     width={{ xs: '100%', sm: '75%', md: '50%'}}
                     alignItems='center'
@@ -43,6 +43,7 @@ export default function App(){
                         minHeight='80vh' 
                         width='100%'
                     >
+                        <Typography variant="h4">🚧 This site is under construction! 🚧</Typography>
                         <AboutMe />
                     </Box>
                     {isTouch ? 
