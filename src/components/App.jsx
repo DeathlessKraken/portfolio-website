@@ -31,7 +31,7 @@ export default function App(){
         <ThemeProvider theme={theme}>
             <Container maxWidth="xl" sx={appContainerStyle}> 
                 <Stack 
-                    width={{ xs: '100%', sm: '75%', md: '50%'}}
+                    width={{ xs: '100%', md: '75%', lg: '50%'}}
                     alignItems='center'
                     marginBottom='20vh'
                 >
@@ -43,7 +43,7 @@ export default function App(){
                         minHeight='80vh' 
                         width='100%'
                     >
-                        <Typography variant="h4">🚧 This site is under construction! 🚧</Typography>
+                        <Typography variant='body' >🚧 This site is under construction! 🚧</Typography>
                         <AboutMe />
                     </Box>
                     {isTouch ? 
@@ -60,25 +60,23 @@ export default function App(){
                     <Grid item xs={4} md={3} >
                         <Project 
                             data={Projects[0]}
-                            sx={{ height: '230px' }}
                         />
                     </Grid>
                     <Grid item xs={4} md={3} >
                         <Project 
                             data={Projects[1]}
-                            sx={{ height: '230px', overflow: 'visible', padding: '20px'}}
+                            sx={{overflow: 'visible', padding: 3}}
                         />
                     </Grid>
                     <Grid item xs={4} md={3} >
                         <Project 
                             data={Projects[0]}
-                            sx={{ height: '230px' }}
                         />
                     </Grid>
                     <Grid item xs={4} md={3} >
                         <Project 
                             data={Projects[1]}
-                            sx={{ height: '230px', overflow: 'visible', padding: '20px' }}
+                            sx={{overflow: 'visible', padding: 3 }}
                         />
                     </Grid>
                     <Grid item xs>
