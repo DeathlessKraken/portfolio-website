@@ -1,10 +1,9 @@
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import TechCard from "./TechCard";
 import VSCode from "../assets/VSCode.svg?react";
-import Webpack from "../assets/Webpack.svg?react";
 import Csharp from "../assets/Csharp.svg?react";
 import Cplusplus from "../assets/Cplusplus.svg?react";
-import ESLint from "../assets/ESLint.svg?react";
 import Git from "../assets/Git.svg?react";
 import HTML from "../assets/HTML.svg?react";
 import Java from "../assets/Java.svg?react";
@@ -17,20 +16,29 @@ import Python from "../assets/Python.svg?react";
 import ReactLogo from "../assets/React.svg?react";
 import { Paper, Stack, Typography } from "@mui/material";
 
+const mobileStyle = {
+    padding: 2.5, 
+};
+
+const defaultStyle = {
+    padding: 5, 
+    backgroundColor: 'rgb(40, 40, 45)',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    width: '100%',
+    gap: 4
+};
+
 export default function ExperienceContent() {
     const imageSize = '50px';
+
+    const isMobile = useMediaQuery('(max-width:600px)');
 
     return (
         <Paper 
             elevation={5}
-            sx={{ 
-                padding: 5, 
-                backgroundColor: 'rgb(40, 40, 45)',
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'space-evenly',
-                width: '100%'
-            }}
+            sx={isMobile ? ({...defaultStyle, ...mobileStyle}) : ({...defaultStyle})}
         >
 
             <Stack alignItems='center'>
