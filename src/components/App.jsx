@@ -50,8 +50,10 @@ export default function App(){
                         <KeyboardDoubleArrowDownIcon sx={{fontSize: 60}}/>
                     }
                 </Stack>
+
                 <Grid container 
-                    spacing={{ xs: 2}} 
+                    columnSpacing={{ xs: 2 }}
+                    rowSpacing={{ xs: 2 }} 
                     columns={{ xs: 4, sm: 8, md: 12 }}
                 >
                     <Grid item xs={4} md={3} >
