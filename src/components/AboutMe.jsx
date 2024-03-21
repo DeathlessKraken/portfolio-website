@@ -2,7 +2,7 @@ import { Paper, Box, Grid, Avatar, Link, Icon, Stack, Typography, Divider } from
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-function AboutMe(props) {
+function AboutMe() {
     const isMobile = useMediaQuery('(max-width:600px)');
 
     return (
