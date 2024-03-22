@@ -7,6 +7,7 @@ import ExperienceContent from "./ExperienceContent";
 import Projects from "../assets/Projects";
 import SwipeUpIcon from '@mui/icons-material/SwipeUp';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import Sandbox from "./Sandbox";
 
 const theme = createTheme({
     typography: {
@@ -79,8 +80,11 @@ export default function App(){
                             sx={{overflow: 'visible', padding: 3 }}
                         />
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={4} sm={8} md={12}>
                         <ExperienceContent />
+                    </Grid>
+                    <Grid item xs>
+                        <Sandbox />
                     </Grid>
                 </Grid>
             </Container>

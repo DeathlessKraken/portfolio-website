@@ -36,6 +36,10 @@ footer {
     height: 2.5rem;
 }
 
+.sandboxDrawer {
+    position: absolute;
+}
+
 .truncate {
     display: -webkit-box;
     -webkit-line-clamp: 3;
