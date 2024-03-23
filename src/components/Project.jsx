@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardActionArea, CardMedia, CardContent, Typography } from "@mui/material";
+import styles from './project.module.css';
 
 function Project(props) {
-    const [isCollapsed, setCollapse] = useState(true);
-
     return (
-        <Card raised sx={{ backgroundColor: 'rgb(32, 32, 32)', display: "flex", flexDirection: 'column', justifyContent: 'space-between' }}>
+        <Card raised className={styles.project}>
             <CardActionArea>
-                <CardMedia component='div' sx={{ overflow: 'hidden', borderBottom: 2, borderColor: '#80CEFF', borderRadius: 2 }}>
+                <CardMedia component='div' className={styles.projectMedia}>
                     <CardMedia 
                         component='img'
                         image={props.data.imgSrc}
@@ -16,7 +15,7 @@ function Project(props) {
                         sx={{...props.sx}}
                     />
                 </CardMedia>
-                <CardContent sx={{ display: "flex", flexDirection: 'column', justifyContent: 'space-around'}}>
+                <CardContent className={styles.projectContent}>
                     <Typography gutterBottom noWrap variant="h5">
                         {props.data.title}
                     </Typography>

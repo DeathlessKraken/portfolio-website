@@ -1,0 +1,18 @@
+.project {
+    background-color: rgb(32, 32, 32) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectMedia {
+    overflow: hidden;
+    border-bottom: 2px solid #80CEFF;
+    border-radius: 4px;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

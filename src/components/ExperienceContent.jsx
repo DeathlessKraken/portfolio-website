@@ -22,6 +22,7 @@ export default function ExperienceContent() {
         <Paper 
             elevation={5}
             sx={{ 
+                width: '100%',
                 backgroundColor: 'rgb(40, 40, 45)',
                 paddingY: 2,
                 paddingX: 1

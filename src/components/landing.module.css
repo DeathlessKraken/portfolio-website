@@ -1,0 +1,13 @@
+.landing {
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.landingSpace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+}
