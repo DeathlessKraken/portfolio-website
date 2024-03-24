@@ -4,14 +4,10 @@ import TabPanel from './TabPanel';
 import PalindromeProject from "./PalindromeProject";
 import NumeralProject from "./project/NumeralProject";
 import styles from './sandbox.module.css';
-
-function randomColor() {
-    const red = Math.floor((Math.random() * 256))
-    const green = Math.floor((Math.random() * 256))
-    const blue = Math.floor((Math.random() * 256))
-
-    return "rgb(" + red + ", " + green + ", " + blue + ")";
-}
+import CipherProject from "./project/CipherProject";
+import Filter1Icon from '@mui/icons-material/Filter1';
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
+import KeyboardIcon from '@mui/icons-material/Keyboard';
 
 export default function Sandbox() {
     const [currentTab, setCurrentTab] = useState(0);
@@ -23,11 +19,11 @@ export default function Sandbox() {
     return (
         <Paper elevation={5} sx={{ width: '100%' }}>
             <Box className={styles.sandbox}>
-                <Box className={styles.sandboxDrawer}>
-                    <Tabs value={currentTab} orientation='vertical' onChange={handleChange}>
-                        <Tab value={0} icon={<Avatar sx={{ backgroundColor: randomColor() }}>P</Avatar>} />
-                        <Tab value={1} icon={<Avatar sx={{ backgroundColor: randomColor() }}>P</Avatar>} />
-                        <Tab value={2} icon={<Avatar sx={{ backgroundColor: randomColor() }}>P</Avatar>} />
+                <Box className={styles.sandboxDrawer} sx={{ color: 'blue.main' }}>
+                    <Tabs value={currentTab} orientation='vertical' onChange={handleChange} textColor="inherit">
+                        <Tab value={0} icon={<AllInclusiveIcon />} />
+                        <Tab value={1} icon={<Filter1Icon />} />
+                        <Tab value={2} icon={<KeyboardIcon />} />
                     </Tabs>
                 </Box>
                 <Box className={styles.sandboxArea}>
@@ -36,6 +32,9 @@ export default function Sandbox() {
                     </TabPanel>
                     <TabPanel value={currentTab} index={1}>
                         <NumeralProject />
+                    </TabPanel>
+                    <TabPanel value={currentTab} index={2}>
+                        <CipherProject />
                     </TabPanel>
                 </Box>
             </Box>
