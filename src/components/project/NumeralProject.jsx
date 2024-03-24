@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Box, Typography, TextField } from '@mui/material';
-import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
 import styles from './numeralproject.module.css'
