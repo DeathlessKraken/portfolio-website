@@ -115,7 +115,7 @@ export default function PalindromeProject() {
                 color='blue'
                 multiline
                 fullWidth 
-                rows={10}
+                minRows={10}
                 value={inputText}
                 onChange={handleChange}
                 placeholder='Mr. Owl ate my metal worm'
