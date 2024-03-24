@@ -105,20 +105,22 @@ export default function PalindromeProject() {
             <Typography variant='h3' color='#000'>
                 Palindrome Checker
             </Typography>
-            <Typography variant='h6' color='#000'>
-                Enter some text to see if it's a palindrome:
-            </Typography>
+
+            { showResult(inputText) }
+
             <TextField 
                 id='palindrome-input' 
                 label='Palindrome' 
                 variant='filled' 
+                color='blue'
                 multiline
                 fullWidth 
                 rows={10}
                 value={inputText}
                 onChange={handleChange}
+                placeholder='Mr. Owl ate my metal worm'
+                focused
             />
-            { showResult(inputText) }
         </>
     )
 }

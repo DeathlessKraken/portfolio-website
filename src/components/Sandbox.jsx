@@ -13,7 +13,7 @@ function randomColor() {
 }
 
 export default function Sandbox() {
-    const [currentTab, setCurrentTab] = useState(false);
+    const [currentTab, setCurrentTab] = useState(0);
 
     function handleChange(event, tabIndex) {
         setCurrentTab(tabIndex);
