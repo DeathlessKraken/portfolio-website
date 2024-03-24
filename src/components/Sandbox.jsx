@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Tab, Tabs, Paper, Box, MenuItem, FormControl, Select, InputLabel } from "@mui/material";
 import TabPanel from './TabPanel';
-import PalindromeProject from "./PalindromeProject";
-import NumeralProject from "./project/NumeralProject";
+import PalindromeProject from "./demos/PalindromeProject";
+import NumeralProject from "./demos/NumeralProject";
 import styles from './sandbox.module.css';
-import CipherProject from "./project/CipherProject";
+import CipherProject from "./demos/CipherProject";
 import Filter1Icon from '@mui/icons-material/Filter1';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import KeyboardIcon from '@mui/icons-material/Keyboard';

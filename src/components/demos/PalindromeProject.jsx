@@ -102,25 +102,27 @@ export default function PalindromeProject() {
 
     return (
         <>
-            <Typography variant='h3' color='#000'>
-                Palindrome Checker
-            </Typography>
+            <div>
+                <Typography variant='h3' color='#000'>
+                    Palindrome Checker
+                </Typography>
 
-            { showResult(inputText) }
+                { showResult(inputText) }
 
-            <TextField 
-                id='palindrome-input' 
-                label='Palindrome' 
-                variant='filled' 
-                color='blue'
-                multiline
-                fullWidth 
-                minRows={10}
-                value={inputText}
-                onChange={handleChange}
-                placeholder='Mr. Owl ate my metal worm'
-                focused
-            />
+                <TextField 
+                    id='palindrome-input' 
+                    label='Palindrome' 
+                    variant='filled' 
+                    color='blue'
+                    multiline
+                    fullWidth 
+                    minRows={10}
+                    value={inputText}
+                    onChange={handleChange}
+                    placeholder='Mr. Owl ate my metal worm'
+                    focused
+                />
+            </div>
         </>
     )
 }
