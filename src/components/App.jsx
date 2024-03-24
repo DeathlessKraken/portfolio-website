@@ -17,11 +17,19 @@ let theme = createTheme({
 
 theme = createTheme(theme, {
     palette: {
-        blue: theme.palette.augmentColor({
+        blue: {
+            main: '#428cda',
+            light: '#6fade4',
+            dark: '#356eba',
+        },
+        white: theme.palette.augmentColor({
             color: {
-                main: '#244188',
+                main: '#c38600',
+                light: '#d0a83c',
+                dark: '#bc6e00',
+                contrastText: '#f4f0e4',
             },
-            name: 'blue',
+            name: 'white',
         }),
     },
 });
