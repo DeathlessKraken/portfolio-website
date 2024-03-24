@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tab, Tabs, Paper, Avatar, Box } from "@mui/material";
 import TabPanel from './TabPanel';
 import PalindromeProject from "./PalindromeProject";
+import NumeralProject from "./project/NumeralProject";
 import styles from './sandbox.module.css';
 
 function randomColor() {
@@ -32,6 +33,9 @@ export default function Sandbox() {
                 <Box className={styles.sandboxArea}>
                     <TabPanel value={currentTab} index={0}>
                         <PalindromeProject />
+                    </TabPanel>
+                    <TabPanel value={currentTab} index={1}>
+                        <NumeralProject />
                     </TabPanel>
                 </Box>
             </Box>
