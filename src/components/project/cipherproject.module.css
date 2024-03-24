@@ -1,0 +1,34 @@
+.neutralResult {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.goodResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.good {
+    color: #000 !important;
+    font-size: 2em !important;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.goodIcon {
+    color: #000 !important;
+    font-size: 2.75em !important;
+}
+
+.neutral {
+    color: #000 !important;
+    font-size: 2em !important;
+}
+
+.neutralIcon {
+    color: #000 !important;
+    font-size: 2.75em !important;
+}
