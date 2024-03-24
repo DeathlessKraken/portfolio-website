@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider, createTheme, Box, Container } from "@mui/material";
+import { ThemeProvider, createTheme, Box, Container, useMediaQuery } from "@mui/material";
 import Landing from "./Landing";
 import ProjectArea from "./ProjectArea";
 import ExperienceContent from "./ExperienceContent";
@@ -22,19 +22,25 @@ theme = createTheme(theme, {
             light: '#6fade4',
             dark: '#356eba',
         },
-        white: theme.palette.augmentColor({
-            color: {
-                main: '#c38600',
-                light: '#d0a83c',
-                dark: '#bc6e00',
-                contrastText: '#f4f0e4',
-            },
-            name: 'white',
-        }),
+        white: {
+            main: '#c38600',
+            light: '#d0a83c',
+            dark: '#bc6e00',
+            contrastText: '#f4f0e4',
+        },
+        darkText: {
+            main: '#1c1c1c',
+            light: '#5b5b5b',
+            dark: '#000000',
+            contrastText: '#1c1c1c',
+        },
     },
 });
 
 export default function App(){
+    const isMobile = useMediaQuery('(max-width:600px)');
+    const isDesktop = useMediaQuery('(min-width:840px)');
+
     return (
         <ThemeProvider theme={theme}>
             <Container maxWidth="xl">
@@ -42,7 +48,7 @@ export default function App(){
                     <Landing />
                     <ProjectArea />
                     <ExperienceContent />
-                    <Sandbox />
+                    <Sandbox isDesktop={isDesktop}/>
                 </Box>
             </Container>
             <Footer />
