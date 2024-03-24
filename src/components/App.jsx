@@ -7,13 +7,23 @@ import Sandbox from "./Sandbox";
 import Footer from "./Footer";
 import styles from "./app.module.css";
 
-const theme = createTheme({
+let theme = createTheme({
     typography: {
         allVariants: {
             color: '#F4F0E4'
         }
-    }, 
+    } 
+});
 
+theme = createTheme(theme, {
+    palette: {
+        blue: theme.palette.augmentColor({
+            color: {
+                main: '#244188',
+            },
+            name: 'blue',
+        }),
+    },
 });
 
 export default function App(){
