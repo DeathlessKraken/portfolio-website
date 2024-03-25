@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, createTheme, Box, Container, useMediaQuery } from "@mui/material";
 import Landing from "./Landing";
-import ProjectArea from "./ProjectArea";
+import ProjectArea from "./projects/ProjectArea";
 import ExperienceContent from "./ExperienceContent";
 import Sandbox from "./Sandbox";
 import Footer from "./Footer";

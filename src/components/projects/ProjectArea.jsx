@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Project from './Project';
-import Projects from '../assets/Projects';
+import Projects from '../../assets/Projects';
 
 export default function ProjectArea() {
     return (

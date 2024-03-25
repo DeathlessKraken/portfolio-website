@@ -17,7 +17,7 @@ const projects = [
         imgAlt: "Logo of Sean's fictional tavern, The High Ground",
         content: "The High Ground, a fictional tavern hosting a collection of food items inspired by the medieval and fantasy genre, such as "
             + "pigeon pie and lemon cakes from Game of Thrones, "
-            + "Lembas from Lord of the Rings, and Butter Beer "
+            + "<span>Lembas</span> from Lord of the Rings, and Butter Beer "
             + "from Harry Potter."
     }
 ];
