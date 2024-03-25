@@ -15,6 +15,7 @@ export default function Landing() {
       >
           <Box className={styles.landingSpace}>
               <Typography variant='body' >🚧 This site is under construction! 🚧</Typography>
+              <Typography variant='body' >v0.54 last updated 03-24-2024-1731</Typography>
               <AboutMe />
           </Box>
           
