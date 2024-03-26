@@ -1,22 +1,8 @@
-import { Paper, Box, Grid, Avatar, Link, Icon, Stack, Typography, Divider } from "@mui/material";
 import React from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import styles from './aboutme.module.css';
 
-function AboutMe() {
-    const isMobile = useMediaQuery('(max-width:600px)');
-
-    return (
-        <Paper 
-            elevation={5} 
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '14px',
-                backgroundColor: '#244188',
-                maxWidth: '600px',
-            }}
-        >
-            <Stack 
+/*
+<Stack 
                 divider={<Divider variant="middle" flexItem/>} 
                 height='100%'
                 justifyContent='space-around'
@@ -72,7 +58,41 @@ function AboutMe() {
                 I spend my free time in the garage, on my SV650, or in the kitchen!
             </Typography>
             </Stack>
-        </Paper>
+*/
+
+function AboutMe() {
+
+    return (
+        <div className={styles.aboutMe}>
+            <div className={styles.aboutHeader}>
+                <div className={styles.aboutHeadText}>
+                    <h1>Sean Brown</h1> 
+                    <h4>Web Designer</h4> 
+                    <h4>Software Developer</h4> 
+                </div>
+                <div className={styles.pfpContainer}>
+                    <img className={styles.pfp} src="./images/pfp.jpeg" alt="Profile picture of a handsome dude" />
+                </div>
+            </div>
+            <div className={styles.aboutContent}>
+                <p>Hey there! I'm Sean, a computer scientist and software developer. 
+                I attended <span>Portland State University</span> where I developed a healthy foundation in CS. 
+                I spend my free time in the garage, on my SV650, or in the kitchen!</p>
+
+                <p>Go on to talk about your CS career and professional life...</p>
+            </div>
+            <div className={styles.aboutNav}>
+                <a href="https://github.com/SBSoftwareDev">
+                    <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/3557315/">
+                    <i className="fa-brands fa-stack-overflow"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sean-brown-a98a512b3/">
+                    <i className="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
     );
 }
 

@@ -17,23 +17,15 @@
 }
 
 body {
-    background-color: rgb(24, 44, 73);
+    background-color: #202124;
     color: var(--primary-color);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: var(--body-item-gap);
-    margin-top: 32px;
+    height: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-}
-
-footer {
-    width: 100%;
-    height: 2.5rem;
 }
 
 .sandboxDrawer {
@@ -57,4 +49,12 @@ footer {
 
 .bodyText {
     color: #830202;
+}
+
+#root {
+    height: calc(100% - 1em);
+}
+
+html {
+    height: 100%;
 }

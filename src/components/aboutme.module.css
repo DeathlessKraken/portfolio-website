@@ -1,0 +1,63 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 600px;
+    border-radius: 8px;
+    gap: 32px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.aboutMe:hover {
+    background-color: rgba(24, 44, 73, 0.479);
+}
+
+.aboutHeader {
+    display: flex;
+    align-items: center;
+}
+
+.aboutHeadText {
+    flex: 1;
+    font-size: 1.4em;
+}
+
+.aboutHeadText > h4 {
+    color: #3E8DE3;
+}
+
+.pfpContainer {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.pfp {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    line-height: 1.25em;
+    font-size: 1.05em;
+}
+
+.aboutContent > p > span {
+    color: #cfd82d;
+}
+
+.aboutNav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.aboutNav > a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #3E8DE3;
+}
