@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 32px;
     width: 600px;
+    height: fit-content;
     border-radius: 8px;
     gap: 32px;
     transition: background-color 0.2s ease-in-out;
@@ -27,8 +28,8 @@
 }
 
 .pfpContainer {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     overflow: hidden;
     border-radius: 8px;
 }

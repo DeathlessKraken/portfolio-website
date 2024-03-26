@@ -1,15 +1,33 @@
 import React, { useState } from "react";
-import { Tab, Tabs, Paper, Box, MenuItem, FormControl, Select, InputLabel } from "@mui/material";
-import TabPanel from './TabPanel';
 import PalindromeProject from "./demos/PalindromeProject";
 import NumeralProject from "./demos/NumeralProject";
-import styles from './sandbox.module.css';
 import CipherProject from "./demos/CipherProject";
-import Filter1Icon from '@mui/icons-material/Filter1';
-import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
-import KeyboardIcon from '@mui/icons-material/Keyboard';
+import styles from './sandbox.module.css';
 
-export default function Sandbox(props) {
+export default function Sandbox() {
+    const [tab, setTab] = useState(0);
+    const colors = ['red', 'blue', 'green'];
+
+    function handleClick(event) {
+        setTab(event.target.value);
+    }
+
+    return (
+        <div className={styles.sandbox}>
+            <h2>Sandbox</h2>
+            <p>A couple of things to mess around with!</p>
+            <div className={styles.sandboxTabs}>
+                <button type="button" value={0} onClick={handleClick}>Roman Numerals</button>
+                <button type="button" value={1} onClick={handleClick}>Palindromes</button>
+                <button type="button" value={2} onClick={handleClick}>ROT13 Cipher</button>
+            </div>
+            <div className={styles.sandboxArea} style={{backgroundColor: colors[tab]}}>
+            </div>
+        </div>
+    );
+}
+
+/*function Sandbox_odl(props) {
     const [currentTab, setCurrentTab] = useState(0);
 
     function handleChange(event, tabIndex) {
@@ -75,4 +93,4 @@ export default function Sandbox(props) {
             </Box>
         </Paper>
     );
-}
+}*/

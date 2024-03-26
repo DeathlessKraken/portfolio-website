@@ -1,50 +1,37 @@
-import React, { useState } from "react";
-import { Card, CardActionArea, CardMedia, CardContent, Typography } from "@mui/material";
-import ProjectDialog from "./ProjectDialog";
+import React from 'react';
+import Tag from '../Tag';
 import styles from './project.module.css';
 
-function Project(props) {
-    const [open, setOpen] = useState(false);
+export default function Project(props) {
+    const { title, desc, tags, imgProps } = props;
 
-    function handleClick() {
-        setOpen(true);
-    }
-
-    function handleClose() {
-        setOpen(false);
+    function generateTags(list) {
+        return (
+            <>
+                { list.map((item, index) => {
+                    return (
+                        <Tag 
+                            key={index} 
+                            text={item}
+                        />
+                    );
+                }) }
+            </>
+        );
     }
 
     return (
-        <>
-        <ProjectDialog open={open} onClose={handleClose} data={props.data} />
-        <Card raised className={styles.project}>
-            <CardActionArea onClick={handleClick}>
-                <CardMedia component='div' className={styles.projectMedia}>
-                    <CardMedia 
-                        component='img'
-                        image={props.data.imgSrc}
-                        alt={props.data.imgAlt}
-                        height='230px'
-                        sx={{...props.sx}}
-                    />
-                </CardMedia>
-                <CardContent className={styles.projectContent}>
-                    <Typography gutterBottom noWrap variant="h5">
-                        {props.data.title}
-                    </Typography>
-                    <Typography 
-                        variant="body2" 
-                        color='#A9A9A9' 
-                        className='truncate'
-                        sx={{ fontSize: 16 }}
-                    >
-                        {props.data.content}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-        </Card>
-        </>
+        <div className={styles.layout}>
+            <div className={styles.content}>
+                <h2>{title}</h2>
+                <p>{desc}</p>
+                <div className={styles.tagContainer}>
+                    { generateTags(tags) }
+                </div>
+            </div>
+            <div className={styles.media}>
+                <img src={imgProps.src} alt={imgProps.alt} />
+            </div>
+        </div>
     );
 }
-
-export default Project;

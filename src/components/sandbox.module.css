@@ -1,37 +1,17 @@
 .sandbox {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #cccccc;
-    width: 100%;
-    min-height: 500px;
-    max-height: 800px;
-    border-radius: 4px;
-}
-
-.sandboxPaper {
-    background-color: rgb(40, 40, 45) !important;
-    width: 100%;
-}
-
-.sandboxDrawer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: fit-content;
-    height: 100%;
     background-color: rgb(40, 40, 45);
+    border-radius: 8px;
+    height: 600px;
+    padding: 16px;
 }
 
-.sandboxSelect {
-    padding: 16px;
-    width: 100%;
+.sandboxTabs {
+    display: flex;
+    gap: 16px;
 }
 
 .sandboxArea {
-    margin: 0 auto;
-    padding: 8px;
-    max-width: 90%;
-    overflow: auto;
+    width: 100px;
+    height: 100px;
+    margin: 16px;
 }

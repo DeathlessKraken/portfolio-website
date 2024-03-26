@@ -1,18 +1,38 @@
-.project {
-    background-color: rgb(32, 32, 32) !important;
+.layout {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 8px;
+    padding: 16px;
 }
 
-.projectMedia {
+.layout:hover {
+    background-color: rgba(24, 44, 73, 0.479);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.media {
+    flex-shrink: 0;
+    width: 150px;
+    height: 100%;
+    border-radius: 8px;
     overflow: hidden;
-    border-bottom: 2px solid #80CEFF;
-    border-radius: 4px;
 }
 
-.projectContent {
+.media > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tagContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    gap: 8px;
 }

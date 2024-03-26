@@ -5,9 +5,8 @@
     padding: 32px;
     gap: 32px;
     border-radius: 8px;
-    transition: background-color 0.2s ease-in-out;
 }
 
-.expContent:hover {
-    background-color: rgba(24, 44, 73, 0.479);
+span {
+    color: #3E8DE3;
 }
