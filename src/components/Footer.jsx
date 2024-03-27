@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        🚧v0.57 Built by Sean Brown - Copyright ⓒ {year}
+        🚧v0.65 Built by Sean Brown - Copyright ⓒ {year}
       </p>
     </footer>
   );
