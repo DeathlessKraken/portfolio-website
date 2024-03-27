@@ -1,10 +1,12 @@
 .tag {
-    background-color: green;
+    color: rgba(29, 223, 29, 0.404);
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    padding: 0 8px;
+    padding: 2px 8px;
+    border: 1px solid rgb(24, 214, 24, 0.404);
+    border-radius: 6px;
 }
 
 .tag > p {
