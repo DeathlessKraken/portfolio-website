@@ -46,38 +46,38 @@ function convertToRoman(num) {
   
     return result.join('');
 }
-/*
+
 function GoodResult(...values) {
     return (
-        <Box className={styles.result}>
-            <Typography variant='h6' className={styles.good}>
+        <div className={styles.result}>
+            <p className={styles.good}>
                 { values[0] } equals { values[1] }
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
 
 function NeutralResult() {
     return (
-        <Box className={styles.result}>
-            <EditIcon className={styles.neutralIcon}/>
-            <Typography variant='h6' className={styles.neutral}>
+        <div className={styles.result}>
+            <i className="fa-solid fa-i-cursor"></i>
+            <p className={styles.neutral}>
                 Enter a number!
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
 
 function BadResult() {
     return (
-        <Box className={styles.result}>
-            <CloseIcon className={styles.badIcon}/>
-            <Typography variant='h6' className={styles.bad}>
+        <div className={styles.result}>
+            <i className="fa-solid fa-xmark"></i>
+            <p className={styles.bad}>
                 Out of bounds!
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
-}*/
+}
 
 export default function NumeralProject(props) {
     const [inputText, setInputText] = useState('');
@@ -103,6 +103,12 @@ export default function NumeralProject(props) {
             <h3>
                 Roman Numeral Converter
             </h3>
+            <input 
+                type="number" 
+                value={inputText}
+                onChange={handleChange}
+            />
+            { showResult(inputText) }
         </>
     )
 }

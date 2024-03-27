@@ -40,39 +40,39 @@ function palindrome(str) {
     
     }
 }
-/*
+
 function GoodResult() {
     return (
-        <Box className={styles.result}>
-            <CheckIcon className={styles.goodIcon}/>
-            <Typography variant='h6' className={styles.good}>
+        <div className={styles.result}>
+            <i class="fa-solid fa-check"></i>
+            <p className={styles.good}>
                 That's a palindrome!
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
 
 function BadResult() {
     return (
-        <Box className={styles.result}>
-            <CloseIcon className={styles.badIcon}/>
-            <Typography variant='h6' className={styles.bad}>
+        <div className={styles.result}>
+            <i className="fa-solid fa-xmark"></i>
+            <p className={styles.bad}>
                 That's a NOT palindrome...
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
 
 function NeutralResult() {
     return (
-        <Box className={styles.result}>
-            <EditIcon className={styles.neutralIcon}/>
-            <Typography variant='h6' className={styles.neutral}>
+        <div className={styles.result}>
+            <i className="fa-solid fa-i-cursor"></i>
+            <p className={styles.neutral}>
                 Enter some text!
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
-} */
+} 
 
 export default function PalindromeProject() {
     const [inputText, setInputText] = useState('');
@@ -102,6 +102,13 @@ export default function PalindromeProject() {
                 <h3>
                     Palindrome Checker
                 </h3>
+                <input 
+                    type="text" 
+                    value={inputText}
+                    onChange={handleChange}
+                    placeholder='Mr. Owl ate my metal worm'
+                />
+                { showResult(inputText) }
             </div>
         </>
     )

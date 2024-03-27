@@ -31,32 +31,30 @@ function rot13(str) {
     return result.join('');
 }
 
-/*
 function GoodResult(...values) {
     return (
-        <Box className={styles.goodResult}>
-            <Typography variant='h6' className={styles.good}>
+        <div className={styles.goodResult}>
+            <p className={styles.good}>
                 {values[0]}
-            </Typography>
-            <ArrowDownwardIcon />
-            <Typography variant='h6' className={styles.good}>
+            </p>
+            <i class="fa-solid fa-arrow-down"></i>
+            <p className={styles.good}>
                 {values[1]}
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
 
 function NeutralResult() {
     return (
-        <Box className={styles.neutralResult}>
-            <EditIcon className={styles.neutralIcon}/>
-            <Typography variant='h6' className={styles.neutral}>
+        <div className={styles.neutralResult}>
+            <i className="fa-solid fa-xmark"></i>
+            <p className={styles.neutral}>
                 Enter some text!
-            </Typography>
-        </Box>
+            </p>
+        </div>
     );
 }
-*/
 
 export default function CipherProject() {
     const [inputText, setInputText] = useState('');
@@ -80,6 +78,12 @@ export default function CipherProject() {
             <h3>
                 ROT13 Cipher Transcoder
             </h3>
+            <input 
+                type="text" 
+                value={inputText}
+                onChange={handleChange}
+            />
+            { showResult(inputText) }
         </>
     )
 }
