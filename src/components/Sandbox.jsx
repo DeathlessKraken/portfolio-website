@@ -6,7 +6,7 @@ import CipherProject from './demos/CipherProject';
 import styles from './sandbox.module.css';
 
 export default function Sandbox() {
-    const [tabs, setTabs] = useState(['transparent','#3E8DE3', 'transparent']);
+    const [tabs, setTabs] = useState(['#3E8DE3', 'transparent', 'transparent']);
 
     function handleClick(event) {
         setTabs(prevState => {
