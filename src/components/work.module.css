@@ -1,0 +1,48 @@
+.work {
+    padding: 16px;
+}
+
+.careerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 1em 0.5em 0 0.5em;
+}
+
+.gridJob {
+    grid-area: job;
+}
+
+.gridLocation {
+    grid-area: location;
+    justify-self: end;
+}
+
+.gridPosition {
+    grid-area: position;
+}
+
+.gridTime {
+    grid-area: time;
+    justify-self: end;
+}
+
+.gridDesc {
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 32px 0 32px;
+    line-height: 1.5em;
+}
+
+.career {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: 1fr 1fr min-content;
+    grid-template-areas: 
+        "job . location"
+        "position . time"
+        "desc desc desc";
+    row-gap: 0.5em;
+}
