@@ -37,6 +37,7 @@ sup {
 }
 
 .smallInput > div > p {
+    font-size: 1.4em;
     color: red;
 }
 
@@ -80,5 +81,23 @@ sup {
 }
 
 .largeInputContainer > div > p {
+    font-size: 1.4em;
     color: red;
+}
+
+.sendButton {
+    width: 5em;
+    height: 2em;
+    align-self: end;
+    background-color: #3E8DE3;
+    border: none;
+    border-radius: 8px;
+}
+
+.sendButton:hover {
+    cursor: pointer;
+}
+
+.sendButton:active {
+    background-color: #235488;
 }

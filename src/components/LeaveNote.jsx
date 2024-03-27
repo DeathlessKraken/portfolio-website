@@ -102,6 +102,9 @@ export default function Sandbox() {
                     />
                 </div>
             </div>
+            <button className={styles.sendButton} type="submit" title="Send" name="Send">
+                <i className="fa-solid fa-paper-plane"></i>
+            </button>
         </div>
     );
 }
