@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField } from '@mui/material';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import EditIcon from '@mui/icons-material/Edit';
 import styles from './cipherproject.module.css'
 
 function rot13(str) {
@@ -34,6 +31,7 @@ function rot13(str) {
     return result.join('');
 }
 
+/*
 function GoodResult(...values) {
     return (
         <Box className={styles.goodResult}>
@@ -58,6 +56,7 @@ function NeutralResult() {
         </Box>
     );
 }
+*/
 
 export default function CipherProject() {
     const [inputText, setInputText] = useState('');
@@ -78,11 +77,15 @@ export default function CipherProject() {
 
     return (
         <>
-            <Typography variant='h3' color='#000'>
+            <h3>
                 ROT13 Cipher Transcoder
-            </Typography>
+            </h3>
+        </>
+    )
+}
 
-            <TextField 
+/*
+<TextField 
                 id='cipher-input' 
                 label='ROT13 Cipher' 
                 variant='filled' 
@@ -93,9 +96,4 @@ export default function CipherProject() {
                 value={inputText}
                 onChange={handleChange}
                 focused
-            />
-
-            { showResult(inputText) }
-        </>
-    )
-}
+            /> */

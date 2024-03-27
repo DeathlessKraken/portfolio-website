@@ -1,8 +1,4 @@
-import { Box, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import CheckIcon from '@mui/icons-material/Check';
-import CloseIcon from '@mui/icons-material/Close';
-import EditIcon from '@mui/icons-material/Edit';
 import styles from './palindromeproject.module.css';
 
 function palindrome(str) {
@@ -44,7 +40,7 @@ function palindrome(str) {
     
     }
 }
-
+/*
 function GoodResult() {
     return (
         <Box className={styles.result}>
@@ -76,7 +72,7 @@ function NeutralResult() {
             </Typography>
         </Box>
     );
-}
+} */
 
 export default function PalindromeProject() {
     const [inputText, setInputText] = useState('');
@@ -103,13 +99,16 @@ export default function PalindromeProject() {
     return (
         <>
             <div>
-                <Typography variant='h3' color='#000'>
+                <h3>
                     Palindrome Checker
-                </Typography>
+                </h3>
+            </div>
+        </>
+    )
+}
 
-                { showResult(inputText) }
-
-                <TextField 
+/*
+<TextField 
                     id='palindrome-input' 
                     label='Palindrome' 
                     variant='filled' 
@@ -121,8 +120,4 @@ export default function PalindromeProject() {
                     onChange={handleChange}
                     placeholder='Mr. Owl ate my metal worm'
                     focused
-                />
-            </div>
-        </>
-    )
-}
+                /> */

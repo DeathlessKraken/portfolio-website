@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './aboutme.module.css';
+import RippleBadge from "./RippleBadge";
 
 function AboutMe() {
 
@@ -10,6 +11,7 @@ function AboutMe() {
                     <h1>Sean Brown</h1> 
                     <h4>Web Designer</h4> 
                     <h4>Software Developer</h4> 
+                    <RippleBadge />
                 </div>
                 <div className={styles.pfpContainer}>
                     <img className={styles.pfp} src="./images/pfp.jpeg" alt="Profile picture of a handsome dude" />
@@ -18,7 +20,7 @@ function AboutMe() {
             <div className={styles.aboutContent}>
                 <p>
                     Hey there! I'm Sean, a computer scientist and software developer. 
-                    I attended <b>Portland State University</b> where I developed a healthy foundation in CS. 
+                    I attended <b>Portland State University</b> where I developed a healthy foundation in Computer Science. 
                     I spend my free time in the garage, on my SV650, or in the kitchen!
                 </p>
                 <p>

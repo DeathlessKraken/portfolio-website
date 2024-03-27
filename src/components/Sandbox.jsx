@@ -1,27 +1,63 @@
 import React, { useState } from "react";
-import PalindromeProject from "./demos/PalindromeProject";
+import TabPanel from './TabPanel';
 import NumeralProject from "./demos/NumeralProject";
-import CipherProject from "./demos/CipherProject";
+import PalindromeProject from './demos/PalindromeProject';
+import CipherProject from './demos/CipherProject';
 import styles from './sandbox.module.css';
 
 export default function Sandbox() {
-    const [tab, setTab] = useState(0);
-    const colors = ['red', 'blue', 'green'];
+    const [tabs, setTabs] = useState(['transparent','#3E8DE3', 'transparent']);
 
     function handleClick(event) {
-        setTab(event.target.value);
+        setTabs(prevState => {
+            return prevState.map((tab, index) => {
+                return index == event.target.value ? '#3E8DE3' : 'transparent';
+            });
+        });
     }
 
     return (
         <div className={styles.sandbox}>
-            <h2>Sandbox</h2>
-            <p>A couple of things to mess around with!</p>
-            <div className={styles.sandboxTabs}>
-                <button type="button" value={0} onClick={handleClick}>Roman Numerals</button>
-                <button type="button" value={1} onClick={handleClick}>Palindromes</button>
-                <button type="button" value={2} onClick={handleClick}>ROT13 Cipher</button>
+            <div>
+                <h2>Sandbox</h2>
+                <p>A couple of things to mess around with!</p>
             </div>
-            <div className={styles.sandboxArea} style={{backgroundColor: colors[tab]}}>
+            <div className={styles.sandboxTabs}>
+                <button 
+                    type="button" 
+                    value={0} 
+                    onClick={handleClick}
+                    style={{borderBottomColor: tabs[0]}}
+                >
+                    Roman Numerals
+                </button>
+                <button 
+                    type="button" 
+                    value={1} 
+                    onClick={handleClick}
+                    style={{borderBottomColor: tabs[1]}}
+                >
+                    Palindromes
+                </button>
+                <button 
+                    type="button" 
+                    value={2} 
+                    onClick={handleClick}
+                    style={{borderBottomColor: tabs[2]}}
+                >
+                    ROT13 Cipher
+                </button>
+            </div>
+            <div className={styles.sandboxArea}>
+                <TabPanel tabs={tabs} index={0}>
+                    <NumeralProject />
+                </TabPanel>
+                <TabPanel tabs={tabs} index={1}>
+                    <PalindromeProject />
+                </TabPanel>
+                <TabPanel tabs={tabs} index={2}>
+                    <CipherProject />
+                </TabPanel>
             </div>
         </div>
     );

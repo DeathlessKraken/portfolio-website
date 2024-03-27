@@ -1,12 +1,11 @@
 import React from 'react';
 
 export default function TabPanel(props) {
-    const { children, value, index } = props;
+    const { children, tabs, index } = props;
 
     return (
       <div
-          role='tabpanel'
-          hidden={value !== index}
+          hidden={tabs[index] !== '#3E8DE3'}
       > 
         {children}
       </div>

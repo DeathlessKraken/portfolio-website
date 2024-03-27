@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
-import EditIcon from '@mui/icons-material/Edit';
 import styles from './numeralproject.module.css'
 
 function convertToRoman(num) {
@@ -49,7 +46,7 @@ function convertToRoman(num) {
   
     return result.join('');
 }
-
+/*
 function GoodResult(...values) {
     return (
         <Box className={styles.result}>
@@ -80,9 +77,9 @@ function BadResult() {
             </Typography>
         </Box>
     );
-}
+}*/
 
-export default function NumeralProject() {
+export default function NumeralProject(props) {
     const [inputText, setInputText] = useState('');
 
     function handleChange(event) {
@@ -103,11 +100,14 @@ export default function NumeralProject() {
 
     return (
         <>
-            <Typography variant='h3' color='#000'>
+            <h3>
                 Roman Numeral Converter
-            </Typography>
+            </h3>
+        </>
+    )
+}
 
-            <TextField 
+/*<TextField 
                 id='numeral-input' 
                 label='Roman Numeral' 
                 variant='filled' 
@@ -119,9 +119,4 @@ export default function NumeralProject() {
                 focused
                 helperText='1-3999'
                 FormHelperTextProps={{ sx: {color: '#000'}}}
-            />
-
-            { showResult(inputText) }
-        </>
-    )
-}
+            />*/

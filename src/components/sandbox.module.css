@@ -3,11 +3,29 @@
     border-radius: 8px;
     height: 600px;
     padding: 16px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .sandboxTabs {
     display: flex;
     gap: 16px;
+}
+
+.sandboxTabs > button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid #3E8DE3;
+    border-radius: 4px 4px 0 0;
+    padding: 6px;
+}
+
+.sandboxTabs > button:hover {
+    background-color: #00000040;
+    cursor: pointer;
 }
 
 .sandboxArea {

@@ -10,12 +10,15 @@
 
 .aboutHeader {
     display: flex;
-    align-items: center;
+    height: 200px;
 }
 
 .aboutHeadText {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     font-size: 1.4em;
+    height: 100%;
 }
 
 .aboutHeadText > h4 {

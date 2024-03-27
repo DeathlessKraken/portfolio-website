@@ -21,26 +21,28 @@ export default function ExperienceContent() {
 
     return (
         <div className={styles.expContent}>
-            <h2 style={{paddingLeft: '16px'}}>My Work</h2>
-            <Project 
-                title="The High Ground"
-                descHTML={THG_DESC}
-                tags={['React', 'JavaScript', 'MongoDB']}
-                imgProps={{
-                    src: './images/THG_logo.png',
-                    alt: "Logo of Sean's fictional tavern, The High Ground",
-                    style: {padding: '8px', overflow: 'visible'}
-                }}
-            />
-            <Project 
-                title="Guitar Hero Light Display"
-                descHTML={GH_DESC}
-                tags={['C++', 'C#', 'Arduino', 'Electrical Engineering']}
-                imgProps={{
-                    src: './images/gh.jpg',
-                    alt: "Sean holding a Guitar Hero Controller",
-                }}
-            />
+            <div className={styles.projects}>
+                <h2 style={{paddingLeft: '16px'}}>My Work</h2>
+                <Project 
+                    title="The High Ground"
+                    descHTML={THG_DESC}
+                    tags={['React', 'JavaScript', 'MongoDB']}
+                    imgProps={{
+                        src: './images/THG_logo.png',
+                        alt: "Logo of Sean's fictional tavern, The High Ground",
+                        style: {padding: '8px', overflow: 'visible'}
+                    }}
+                />
+                <Project 
+                    title="Guitar Hero Light Display"
+                    descHTML={GH_DESC}
+                    tags={['C++', 'C#', 'Arduino', 'Electrical Engineering']}
+                    imgProps={{
+                        src: './images/gh.jpg',
+                        alt: "Sean holding a Guitar Hero Controller",
+                    }}
+                />
+            </div>
             <Sandbox />
         </div>
     );
