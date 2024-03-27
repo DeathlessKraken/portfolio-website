@@ -1,0 +1,21 @@
+.leaveNote {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+sup {
+    font-size: xx-small;
+}
+
+.noteInputs {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 16px 0;
+    gap: 4px;
+    width: fit-content;
+}
+
+.noteField {
+    max-width: fit-content;
+}
