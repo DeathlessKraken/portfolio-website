@@ -1,5 +1,5 @@
 import React from "react";
-import Sandbox from "./Sandbox";
+import LeaveNote from './LeaveNote';
 import Project from "./projects/Project";
 import styles from './experiencecontent.module.css';
 
@@ -43,7 +43,7 @@ export default function ExperienceContent() {
                     }}
                 />
             </div>
-            <Sandbox />
+            <LeaveNote />
         </div>
     );
 }
