@@ -2,6 +2,7 @@ import React from "react";
 import LeaveNote from './LeaveNote';
 import Project from "./projects/Project";
 import styles from './experiencecontent.module.css';
+import Work from "./Work";
 
 export default function ExperienceContent() {
     const THG_DESC = 
@@ -22,7 +23,7 @@ export default function ExperienceContent() {
     return (
         <div className={styles.expContent}>
             <div className={styles.projects}>
-                <h2 style={{paddingLeft: '16px'}}>My Work</h2>
+                <h2 style={{paddingLeft: '16px'}}>My Work <hr /></h2>
                 <Project 
                     title="The High Ground"
                     descHTML={THG_DESC}
@@ -43,6 +44,7 @@ export default function ExperienceContent() {
                     }}
                 />
             </div>
+            <Work />
             <LeaveNote />
         </div>
     );
