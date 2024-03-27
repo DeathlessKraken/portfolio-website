@@ -4,6 +4,7 @@ import styles from './ripplebadge.module.css';
 export default function RippleBadge() {
     return (
         <div className={styles.rippleBadge}>
+            <p>Status:</p>
             <div className={styles.rippleBadgeBorder}>
                 <p>Looking for work...</p>
                 <div className={styles.ripple}>
