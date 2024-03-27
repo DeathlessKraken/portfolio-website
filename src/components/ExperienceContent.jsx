@@ -26,7 +26,7 @@ export default function ExperienceContent() {
                 <Project 
                     title="The High Ground"
                     descHTML={THG_DESC}
-                    tags={['React', 'JavaScript', 'MongoDB']}
+                    tags={['React', 'PostgreSQL', 'Node.js', 'Express']}
                     imgProps={{
                         src: './images/THG_logo.png',
                         alt: "Logo of Sean's fictional tavern, The High Ground",
