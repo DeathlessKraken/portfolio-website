@@ -6,10 +6,10 @@ import styles from './experiencecontent.module.css';
 export default function ExperienceContent() {
     const THG_DESC = 
     <p>
-        The High Ground, a fictional tavern hosting a collection of food items inspired 
+        A fictional tavern hosting a collection of food items inspired 
         by the medieval and fantasy genre, such as pigeon pie and lemon cakes from <span>Game 
         of Thrones</span>, Lembas from <span>Lord of the Rings</span>, and Butter Beer from 
-        <span> Harry Potter</span>
+        <span> Harry Potter</span>.
     </p>;
 
     const GH_DESC = 
@@ -23,17 +23,18 @@ export default function ExperienceContent() {
         <div className={styles.expContent}>
             <h2 style={{paddingLeft: '16px'}}>My Work</h2>
             <Project 
-                title="Tavern Recipes"
-                desc={THG_DESC}
+                title="The High Ground"
+                descHTML={THG_DESC}
                 tags={['React', 'JavaScript', 'MongoDB']}
                 imgProps={{
                     src: './images/THG_logo.png',
                     alt: "Logo of Sean's fictional tavern, The High Ground",
+                    style: {padding: '8px', overflow: 'visible'}
                 }}
             />
             <Project 
                 title="Guitar Hero Light Display"
-                desc={GH_DESC}
+                descHTML={GH_DESC}
                 tags={['C++', 'C#', 'Arduino', 'Electrical Engineering']}
                 imgProps={{
                     src: './images/gh.jpg',
