@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+.projects > div {
+    padding-top: 1em;
+}
+
 span {
     color: #3E8DE3;
 }

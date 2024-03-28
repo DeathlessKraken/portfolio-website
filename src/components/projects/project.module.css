@@ -5,6 +5,7 @@
     transition: background-color 0.2s ease-in-out;
     border-radius: 8px;
     padding: 16px;
+    line-height: 1.5em;
 }
 
 .layout:hover {
