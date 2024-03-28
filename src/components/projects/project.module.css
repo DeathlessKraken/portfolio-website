@@ -9,7 +9,7 @@
 }
 
 .layout:hover {
-    background-color: rgba(24, 44, 73, 0.479);
+    background-color: rgba(23, 60, 114, 0.479);
 }
 
 .content {
@@ -22,7 +22,6 @@
 .media {
     flex-shrink: 0;
     width: 150px;
-    height: 100%;
     border-radius: 8px;
     overflow: hidden;
 }

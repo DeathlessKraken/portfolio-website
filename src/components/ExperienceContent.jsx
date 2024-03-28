@@ -23,7 +23,7 @@ export default function ExperienceContent() {
     return (
         <div className={styles.expContent}>
             <div className={styles.projects}>
-                <h2 style={{paddingLeft: '16px'}}>My Work <hr /></h2>
+                <h2>My Work</h2>
                 <div>
                     <Project 
                         title="The High Ground"

@@ -16,6 +16,10 @@
     padding-top: 1em;
 }
 
+.projects > h2 {
+    padding-left: 16px;
+}
+
 span {
     color: #3E8DE3;
 }
