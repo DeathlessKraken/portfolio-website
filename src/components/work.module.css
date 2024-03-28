@@ -16,15 +16,18 @@
 .gridLocation {
     grid-area: location;
     justify-self: end;
+    color: #a6a6a7;
 }
 
 .gridPosition {
     grid-area: position;
+    color: #a6a6a7;
 }
 
 .gridTime {
     grid-area: time;
     justify-self: end;
+    color: #a6a6a7;
 }
 
 .gridDesc {

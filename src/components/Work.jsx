@@ -33,6 +33,25 @@ export default function Work() {
                         </li>
                     </ul>
                 </div>
+                <div className={styles.career}>
+                    <h3 className={styles.gridJob}>Evans Metal Fabricators</h3>
+                    <h3 className={styles.gridLocation}>Swan Island, Oregon</h3>
+                    <h3 className={styles.gridPosition}>Welder</h3>
+                    <h3 className={styles.gridTime}>2021-2022</h3>
+                    <ul className={styles.gridDesc}>
+                        <li>
+                            Manufactured machine bases for vibration sensitive production tools with <span>teams
+                            of 2-3</span> people. 
+                        </li>
+                        <li>
+                            <span>Carefully observed blueprints</span> while leveling, welding, and grinding Hollow Structural
+                            Steel with high scrutiny.
+                        </li>
+                        <li>
+                            Operated forklifts and 10 ton overhead cranes with the <span>safety of others</span> in mind.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
