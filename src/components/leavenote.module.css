@@ -1,7 +1,17 @@
 .leaveNote {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+}
+
+.leaveNote > div:first-child {
+    line-height: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.leaveNote > div > h2 {
+    font-size: 2em;
 }
 
 sup {
@@ -10,21 +20,25 @@ sup {
 
 .noteInputs {
     display: flex;
+    flex-direction: column;
     padding: 16px 0 16px 0;
     justify-content: space-between;
     width: 100%;
+    gap: 1em;
 }
 
 .smallInputContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1em;
 }
 
 .smallInput {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    width: fit-content;
+    gap: 0.25em;
 }
 
 .smallInput > input {
@@ -34,6 +48,7 @@ sup {
 .smallInput > div {
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 
 .smallInput > div > p {
@@ -72,12 +87,13 @@ sup {
 .largeInputContainer {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.25em;
 }
 
 .largeInputContainer > div {
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 
 .largeInputContainer > div > p {

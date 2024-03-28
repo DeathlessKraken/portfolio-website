@@ -47,7 +47,6 @@ export default function ExperienceContent() {
                 </div>
             </div>
             <Work />
-            <LeaveNote />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import styles from './aboutme.module.css';
 import RippleBadge from "./RippleBadge";
+import LeaveNote from './LeaveNote';
+import styles from './aboutme.module.css';
 
 function AboutMe() {
 
@@ -29,7 +30,7 @@ function AboutMe() {
                 </p>
                 <p>
                     I was most recently employed as an Assistant Manager at Discount Tire in Tigard, Oregon.
-                    In December 2023, I set out to finish what I started years ago: my path to becoming a Full Stack
+                    In December 2023, I set out to finish what I started at university: my path to becoming a Full Stack
                     Web Developer. Ever since then, building on my knowledge from <b>PSU</b>, I've 
                     been <b>educating myself</b> full-time.
                 </p>
@@ -51,6 +52,7 @@ function AboutMe() {
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
             </div>
+            <LeaveNote />
         </div>
     );
 }
