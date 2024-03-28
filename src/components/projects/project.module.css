@@ -8,10 +8,6 @@
     line-height: 1.5em;
 }
 
-.layout:hover {
-    background-color: rgba(23, 60, 114, 0.479);
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -34,5 +30,23 @@
 
 .tagContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+}
+
+@media (max-width: 840px) {
+    .layout {
+        padding: 1em 0;
+        flex-direction: column;
+    }
+
+    .media {
+        align-self: center;
+    }
+}
+
+@media (hover: hover) {
+    .layout:hover {
+        background-color: rgba(23, 60, 114, 0.479);
+    }
 }

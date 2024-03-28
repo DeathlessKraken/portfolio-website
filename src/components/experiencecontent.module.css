@@ -4,7 +4,6 @@
     flex-direction: column;
     padding: 32px;
     border-radius: 8px;
-    overflow-y: auto;
 }
 
 .projects {
@@ -14,6 +13,9 @@
 
 .projects > div {
     padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .projects > h2 {
@@ -22,4 +24,14 @@
 
 span {
     color: #3E8DE3;
+}
+
+@media (max-width: 840px) {
+    .expContent {
+        padding: 0;
+    }
+
+    .projects > h2 {
+        padding: 2em 0 0 0;
+    }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import LeaveNote from './LeaveNote';
 import Project from "./projects/Project";
 import styles from './experiencecontent.module.css';
 import Work from "./Work";
@@ -38,7 +37,7 @@ export default function ExperienceContent() {
                     <Project 
                         title="Guitar Hero Light Display"
                         descHTML={GH_DESC}
-                        tags={['C++', 'C#', 'Arduino', 'Electrical Engineering']}
+                        tags={['C++', 'C#', 'Arduino', 'High Voltage']}
                         imgProps={{
                             src: './images/gh.jpg',
                             alt: "Sean holding a Guitar Hero Controller",

@@ -9,9 +9,11 @@ function AboutMe() {
         <div className={styles.aboutMe}>
             <div className={styles.aboutHeader}>
                 <div className={styles.aboutHeadText}>
-                    <h1>Sean Brown</h1> 
-                    <h4>Web Designer</h4> 
-                    <h4>Software Developer</h4> 
+                    <div>
+                        <h1>Sean Brown</h1> 
+                        <h4>Web Designer</h4> 
+                        <h4>Software Developer</h4> 
+                    </div>
                     <RippleBadge />
                 </div>
                 <div className={styles.pfpContainer}>

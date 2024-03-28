@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 32px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: fit-content;
     border-radius: 8px;
     gap: 32px;
@@ -10,7 +11,7 @@
 
 .aboutHeader {
     display: flex;
-    height: 200px;
+    min-height: 200px;
 }
 
 .aboutHeadText {
@@ -18,10 +19,10 @@
     display: flex;
     flex-direction: column;
     font-size: 1.4em;
-    height: 100%;
+    justify-content: space-between;
 }
 
-.aboutHeadText > h4 {
+.aboutHeadText > div > h4 {
     color: #3E8DE3;
 }
 
@@ -65,10 +66,31 @@
     align-items: center;
 }
 
-.aboutNav > a:hover {
-    background-color: rgba(24, 44, 73, 0.8);
-}
-
 b {
     color: #cfd82d;
+}
+
+@media (hover: hover) {
+    .aboutNav > a:hover {
+        background-color: rgba(24, 44, 73, 0.8);
+    }
+}
+
+@media (max-width: 840px) {
+    .aboutMe {
+        padding: 0;
+    }
+
+    .aboutHeader {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .aboutHeadText {
+        gap: 1em;
+    }
+
+    .pfpContainer {
+        align-self: center;
+    }
 }

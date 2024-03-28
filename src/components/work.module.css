@@ -11,22 +11,24 @@
 
 .gridJob {
     grid-area: job;
+    text-align: start;
 }
 
 .gridLocation {
     grid-area: location;
-    justify-self: end;
+    text-align: end;
     color: #a6a6a7;
 }
 
 .gridPosition {
     grid-area: position;
+    text-align: start;
     color: #a6a6a7;
 }
 
 .gridTime {
     grid-area: time;
-    justify-self: end;
+    text-align: end;
     color: #a6a6a7;
 }
 
@@ -41,11 +43,21 @@
 
 .career {
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr 1fr min-content;
     grid-template-areas: 
         "job . location"
         "position . time"
         "desc desc desc";
     row-gap: 0.5em;
+}
+
+@media (max-width: 840px) {
+    .work {
+        padding: 3em 0;
+    }
+
+    .careerContainer {
+        padding: 1em 0 0 0;
+    }
 }
