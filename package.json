@@ -16,8 +16,7 @@
     "@mui/material": "^5.15.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-svg": "^16.1.33",
-    "vite-plugin-svgr": "^4.2.0"
+    "react-svg": "^16.1.33"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
