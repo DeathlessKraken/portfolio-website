@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from './leavenote.module.css';
 
 export default function Sandbox() {
@@ -26,7 +26,8 @@ export default function Sandbox() {
                      <sup className='superText'>or want to offer me a job</sup> please do so!</p>
             </div>
 
-            <form action="" method='post'>
+            <form name="note" method='POST'>
+                <input type="hidden" name="form-name" value="note"/>
                 <div className={styles.noteInputs}>
                     <div className={styles.smallInputContainer}>
                         <div className={styles.smallInput}>
