@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "./projects/Project";
 import styles from './experiencecontent.module.css';
 import Work from "./Work";
