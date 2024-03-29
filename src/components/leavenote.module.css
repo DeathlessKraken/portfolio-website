@@ -1,6 +1,7 @@
 .leaveNote {
     display: flex;
     flex-direction: column;
+    padding-top: 2em;
 }
 
 .leaveNote > div:first-child {

@@ -28,7 +28,7 @@ export default function ExperienceContent() {
                 <h2>My Work</h2>
                 <div>
                     <Project 
-                        title="The High Ground"
+                        title="The High Ground - 🚧"
                         descHTML={THG_DESC}
                         tags={['React', 'PostgreSQL', 'Node.js', 'Express']}
                         imgProps={{

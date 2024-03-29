@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './work.module.css';
 
 export default function Work() {
@@ -20,7 +19,7 @@ export default function Work() {
                         </li>
                         <li>
                             Consistently <span>top-ranked in unit sales</span> value. I develop personal
-                            relationships with people, identify their needs and what 
+                            relationships with customers, identify their needs, and communicate what 
                             may work best for them. 
                         </li>
                         <li>
