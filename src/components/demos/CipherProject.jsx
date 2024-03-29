@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './cipherproject.module.css'
 
 function rot13(str) {
@@ -37,7 +37,7 @@ function GoodResult(...values) {
             <p className={styles.good}>
                 {values[0]}
             </p>
-            <i class="fa-solid fa-arrow-down"></i>
+            <i className="fa-solid fa-arrow-down"></i>
             <p className={styles.good}>
                 {values[1]}
             </p>

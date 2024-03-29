@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function TabPanel(props) {
     const { children, tabs, index } = props;
 

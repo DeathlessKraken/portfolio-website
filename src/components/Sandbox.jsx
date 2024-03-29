@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TabPanel from './TabPanel';
 import NumeralProject from "./demos/NumeralProject";
 import PalindromeProject from './demos/PalindromeProject';
