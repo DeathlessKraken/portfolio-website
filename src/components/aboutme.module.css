@@ -1,9 +1,8 @@
 .aboutMe {
     display: flex;
     flex-direction: column;
-    padding: 32px;
     width: 100%;
-    max-width: 600px;
+    padding: 3em 0;
     height: fit-content;
     border-radius: 8px;
     gap: 32px;
@@ -17,60 +16,12 @@
     font-size: 1.05em;
 }
 
-.aboutNav {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.aboutNav > a {
-    font-size: 2em;
-    text-decoration: none;
-    color: #3E8DE3;
-    transition: background-color 0.2s ease-in-out;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 b {
     color: #cfd82d;
 }
 
-@media (hover: hover) {
-    .aboutNav > a:hover {
-        background-color: rgba(24, 44, 73, 0.8);
-    }
-}
-
-@media (max-width: 600px) {
-    .aboutHeader {
-        flex-direction: column;
-        gap: 2em;
-    }
-}
-
-@media (max-width: 840px) {
-    .aboutMe {
-        padding: 0;
-    }
-
-    .aboutHeadText {
-        gap: 1em;
-    }
-
-    .pfpContainer {
-        align-self: center;
-    }
-}
-
 @media (max-width: 1300px) {
     .aboutMe {
-        max-width: none;
         justify-content: center;
     }
 }

@@ -1,14 +1,8 @@
-import Profile from './Profile';
-import LeaveNote from './LeaveNote';
-import useMediaQuery from "./functions/useMediaQuery";
 import styles from './aboutme.module.css';
 
 function AboutMe() {
-    const isDesktop = useMediaQuery('(min-width: 1300px)');
-
     return (
         <div className={styles.aboutMe}>
-            <Profile />
             <div className={styles.aboutContent}>
                 <p>
                     Hey there! I&apos;m Sean, a computer scientist and software developer. 
@@ -32,18 +26,6 @@ function AboutMe() {
                     stories of handmade radios and a bench power supply&#41;.
                 </p>
             </div>
-            <div className={styles.aboutNav}>
-                <a href="https://github.com/SBSoftwareDev">
-                    <i className="fa-brands fa-github"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/3557315/">
-                    <i className="fa-brands fa-stack-overflow"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sean-brown-a98a512b3/">
-                    <i className="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-            { isDesktop && <LeaveNote /> }
         </div>
     );
 }

@@ -1,5 +1,5 @@
 .work {
-    padding: 16px;
+    padding: 3em 0;
 }
 
 .careerContainer {
@@ -53,10 +53,6 @@
 }
 
 @media (max-width: 1300px) {
-    .work {
-        padding: 3em 0;
-    }
-
     .careerContainer {
         padding: 1em 0 0 0;
     }

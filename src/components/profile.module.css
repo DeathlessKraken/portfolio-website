@@ -26,3 +26,20 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 840px) {
+    .profileText {
+        gap: 1em;
+    }
+
+    .pfpContainer {
+        align-self: center;
+    }
+}

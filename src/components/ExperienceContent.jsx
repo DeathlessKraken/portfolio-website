@@ -1,11 +1,9 @@
 import Project from "./projects/Project";
 import Work from "./Work";
 import LeaveNote from './LeaveNote';
-import useMediaQuery from "./functions/useMediaQuery";
 import styles from './experiencecontent.module.css';
 
 export default function ExperienceContent() {
-    const isDesktop = useMediaQuery('(min-width: 1300px)');
 
     const THG_DESC = 
     <p>
@@ -49,7 +47,7 @@ export default function ExperienceContent() {
                 </div>
             </div>
             <Work />
-            { !isDesktop && <LeaveNote /> }
+            <LeaveNote />
         </div>
     );
 }
