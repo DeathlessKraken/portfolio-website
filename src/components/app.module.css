@@ -9,10 +9,11 @@
 .app {
     display: flex;
     flex-direction: column;
-    margin: 48px auto;
+    margin: 0 auto 3em auto;
     width: 100%;
     max-width: 1200px;
-    padding: 0 5em;
+    padding: 0 5em 5em 5em;
+    gap: 5em;
 }
 
 @media (max-width: 1300px) {
