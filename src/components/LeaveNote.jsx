@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import styles from './leavenote.module.css';
 
-export default function Sandbox() {
+export default function LeaveNote() {
     const [input, setInput] = useState({
         name: '', 
         email: '',
