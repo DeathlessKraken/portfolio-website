@@ -76,14 +76,16 @@ b {
     }
 }
 
-@media (max-width: 840px) {
-    .aboutMe {
-        padding: 0;
-    }
-
+@media (max-width: 600px) {
     .aboutHeader {
         flex-direction: column;
         gap: 2em;
+    }
+}
+
+@media (max-width: 840px) {
+    .aboutMe {
+        padding: 0;
     }
 
     .aboutHeadText {
@@ -92,5 +94,12 @@ b {
 
     .pfpContainer {
         align-self: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .aboutMe {
+        max-width: none;
+        justify-content: center;
     }
 }

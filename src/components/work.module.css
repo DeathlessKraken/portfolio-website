@@ -52,7 +52,7 @@
     row-gap: 0.5em;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1300px) {
     .work {
         padding: 3em 0;
     }

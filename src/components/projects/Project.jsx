@@ -1,4 +1,3 @@
-import React from 'react';
 import Tag from '../Tag';
 import styles from './project.module.css';
 

@@ -65,7 +65,7 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 600px) {
   .rippleBadge {
     width: fit-content;
     align-self: center;
