@@ -27,7 +27,7 @@ export default function LeaveNote() {
     }
 
     return (
-        <div className={styles.leaveNote}>
+        <div className={styles.leaveNote} id="contact">
             <div className={styles.leaveNoteHeader}>
                 <h2>Reach out to me!</h2>
                 <p>If you would like leave me a note, have something to say,

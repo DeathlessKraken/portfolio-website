@@ -2,7 +2,7 @@ import styles from './work.module.css';
 
 export default function Work() {
     return (
-        <div className={styles.work}>
+        <div className={styles.work} id='experience'>
             <h1>Professional Experience</h1>
             <hr />
             <div className={styles.careerContainer}>

@@ -22,7 +22,7 @@ export default function ExperienceContent() {
 
     return (
         <div className={styles.expContent}>
-            <div className={styles.projects}>
+            <div className={styles.projects} id="projects">
                 <h2>My Work</h2>
                 <div>
                     <Project 
