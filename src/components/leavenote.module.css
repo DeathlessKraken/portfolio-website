@@ -111,10 +111,12 @@ sup {
     border-radius: 8px;
 }
 
-.sendButton:hover {
-    cursor: pointer;
-}
-
 .sendButton:active {
     background-color: #235488;
+}
+
+@media (hover: hover) {
+    .sendButton:hover {
+        cursor: pointer;
+    }
 }
