@@ -1,8 +1,12 @@
 import Project from "./projects/Project";
-import styles from './experiencecontent.module.css';
 import Work from "./Work";
+import LeaveNote from './LeaveNote';
+import useMediaQuery from "./functions/useMediaQuery";
+import styles from './experiencecontent.module.css';
 
 export default function ExperienceContent() {
+    const isDesktop = useMediaQuery('(min-width: 1300px)');
+
     const THG_DESC = 
     <p>
         A fictional tavern hosting a collection of food items inspired 
@@ -45,6 +49,7 @@ export default function ExperienceContent() {
                 </div>
             </div>
             <Work />
+            { !isDesktop && <LeaveNote /> }
         </div>
     );
 }

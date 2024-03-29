@@ -1,8 +1,10 @@
 import RippleBadge from "./RippleBadge";
 import LeaveNote from './LeaveNote';
+import useMediaQuery from "./functions/useMediaQuery";
 import styles from './aboutme.module.css';
 
 function AboutMe() {
+    const isDesktop = useMediaQuery('(min-width: 1300px)');
 
     return (
         <div className={styles.aboutMe}>
@@ -53,7 +55,7 @@ function AboutMe() {
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <LeaveNote />
+            { isDesktop && <LeaveNote /> }
         </div>
     );
 }
