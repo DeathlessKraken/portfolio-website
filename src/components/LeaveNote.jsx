@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios';
 import styles from './leavenote.module.css';
 
 export default function Sandbox() {
@@ -18,6 +19,13 @@ export default function Sandbox() {
         });
     }
 
+    function handleForm() {
+        axios.post("/", input)
+            .catch(e => {
+                console.log("ERROR SUBMITTING FORM: ", e);
+            });
+    }
+
     return (
         <div className={styles.leaveNote}>
             <div className={styles.leaveNoteHeader}>
@@ -26,7 +34,7 @@ export default function Sandbox() {
                      <sup className='superText'>or want to offer me a job</sup> please do so!</p>
             </div>
 
-            <form name="note" method='POST'>
+            <form name="note" method='POST' onSubmit={handleForm}>
                 <input type="hidden" name="form-name" value="note"/>
                 <div className={styles.noteInputs}>
                     <div className={styles.smallInputContainer}>
