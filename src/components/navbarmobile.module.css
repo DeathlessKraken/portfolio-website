@@ -1,0 +1,41 @@
+.navBarWrapper {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--bg-color2);
+}
+
+.navBarBlocker {
+    background-color: var(--bg-color2);
+    width: 100%;
+    height: 5em;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    max-width: inherit;
+    width: 100%;
+    height: 3.5em;
+    background-color: #1b436e;
+    border-radius: 8px;
+    padding: 0 1em;
+}
+
+.navMenu {
+    color: var(--primary-color);
+    align-self: center;
+    border-radius: 8px;
+    font-size: x-large;
+}
+
+.navMenu:active {
+    color: #235488;
+}
+
+@media (hover: hover) {
+    .navMenu:hover {
+        cursor: pointer;
+    }
+}
