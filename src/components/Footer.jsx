@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './footer.module.css';
 
 function Footer() {
@@ -6,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        🚧v0.83 Built by Sean Brown - Copyright ⓒ {year}
+        🚧v0.103 Built by Sean Brown - Copyright ⓒ {year}
       </p>
     </footer>
   );
