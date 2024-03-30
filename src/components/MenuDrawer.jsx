@@ -9,7 +9,11 @@ export default function MenuDrawer(props) {
 
     return (
         <>
-            <div className={styles.drawerOverlay} hidden={left === '-100%' ? true : false}></div>
+            <div 
+                className={styles.drawerOverlay} 
+                hidden={left === '-100%' ? true : false}
+                onClick={handleClick}
+            ></div>
             <div 
                 className={styles.menuDrawer} 
                 style={{
@@ -23,7 +27,7 @@ export default function MenuDrawer(props) {
                     <a href="#home" name='home' onClick={handleClick}>Home</a>
                     <a href="#projects" name='projects' onClick={handleClick}>Projects</a>
                     <a href="#experience" name='experience' onClick={handleClick}>Experience</a>
-                    <a href="#contact" name='contact' onClick={handleClick}>Contact</a>
+                    <a href="#contact" name='contact' onClick={handleClick}>Contact Me</a>
                 </div>
             </div>
         </>

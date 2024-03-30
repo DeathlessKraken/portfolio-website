@@ -12,14 +12,34 @@
     left: -100%;
     top: 0;
     display: flex;
-    padding: 1em;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
     width: 60vw;
     height: 100vh;
-    background-color: gray;
+    background-color: var(--bg-color2);
     transition: 500ms;
 }
 
 .closeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1em;
     width: 1em;
+}
+
+.drawerItems {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+.drawerItems > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: #17181a;
+    border-radius: 0.5em;
+    padding: 1em 2em;
 }
