@@ -8,10 +8,12 @@ export default function NavBar () {
 
     function handleClick() {
         setLeft('0');
+        document.body.style.overflow = 'hidden';
     }
 
     function handleClose() {
         setLeft('-100%');
+        document.body.style.overflow = 'visible';
     }
 
     return (
