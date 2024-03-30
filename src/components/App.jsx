@@ -13,6 +13,7 @@ export default function App(){
     return (
         <div className={styles.appContainer}>
             <div className={styles.app} id="home"> 
+                
                 {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
                 <Profile />
                 <AboutMe />

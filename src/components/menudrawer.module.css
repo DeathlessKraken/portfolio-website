@@ -1,0 +1,25 @@
+.drawerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.menuDrawer {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    display: flex;
+    padding: 1em;
+    width: 60vw;
+    height: 100vh;
+    background-color: gray;
+    transition: 500ms;
+}
+
+.closeButton {
+    height: 1em;
+    width: 1em;
+}
