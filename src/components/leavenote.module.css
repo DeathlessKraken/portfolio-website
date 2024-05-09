@@ -73,11 +73,6 @@ sup {
     resize: none;
 }
 
-.textArea:hover {
-    cursor: pointer;
-    background-color: #eeeeee;
-}
-
 .textArea:focus {
     cursor: text;
     background-color: #eeeeee;
@@ -118,5 +113,10 @@ sup {
 @media (hover: hover) {
     .sendButton:hover {
         cursor: pointer;
+    }
+
+    .textArea:hover {
+        cursor: pointer;
+        background-color: #eeeeee;
     }
 }

@@ -26,13 +26,13 @@ export default function ExperienceContent() {
                 <h2>My Work</h2>
                 <div>
                     <Project 
-                        title="The High Ground - 🚧"
+                        title="Fantasy Foods - 🚧"
                         descHTML={THG_DESC}
                         tags={['React', 'PostgreSQL', 'Node.js', 'Express']}
                         imgProps={{
-                            src: './images/THG_logo.png',
-                            alt: "Logo of Sean's fictional tavern, The High Ground",
-                            style: {padding: '8px', overflow: 'visible'}
+                            src: './images/THG_logo.svg',
+                            alt: "Logo of Sean's fictional tavern, Fantasy Foods",
+                            style: {padding: '8px', overflow: 'visible', backgroundColor: '#e5ab95'}
                         }}
                     />
                     <Project 
@@ -43,6 +43,7 @@ export default function ExperienceContent() {
                             src: './images/gh.jpg',
                             alt: "Sean holding a Guitar Hero Controller",
                         }}
+                        link="https://github.com/SBSoftwareDev/guitar-hero-project"
                     />
                 </div>
             </div>

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        🚧v0.103 Built by Sean Brown - Copyright ⓒ {year}
+        Built by Sean Brown - Copyright ⓒ {year}
       </p>
     </footer>
   );

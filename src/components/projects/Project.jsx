@@ -2,7 +2,7 @@ import Tag from '../Tag';
 import styles from './project.module.css';
 
 export default function Project(props) {
-    const { title, descHTML, tags, imgProps } = props;
+    const { title, descHTML, tags, imgProps, link } = props;
 
     function generateTags(list) {
         return (
@@ -20,7 +20,7 @@ export default function Project(props) {
     }
 
     return (
-        <div className={styles.layout}>
+        <a href={link && link} className={styles.layout}>
             <div className={styles.content}>
                 <h2>{title}</h2>
                 {descHTML}
@@ -31,6 +31,6 @@ export default function Project(props) {
             <div className={styles.media}>
                 <img src={imgProps.src} alt={imgProps.alt} style={{...imgProps.style}} />
             </div>
-        </div>
+        </a>
     );
 }

@@ -6,6 +6,9 @@
     border-radius: 8px;
     line-height: 1.5em;
     padding: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    color:inherit
 }
 
 .content {
@@ -18,7 +21,7 @@
 .media {
     flex-shrink: 0;
     width: 150px;
-    height: fit-content;
+    aspect-ratio: 1/1;
     border-radius: 8px;
     overflow: hidden;
 }
